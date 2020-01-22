@@ -1,0 +1,104 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% SETUP
+
+\documentclass[a4paper,11pt, english]{report}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                 PACKAGES
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Importing Packages
+
+\providecommand{\main}{.}  % for subfiles
+\providecommand{\mystyleloc}{./util}
+\usepackage{\mystyleloc/main}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                 SETTINGS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Implementing Package Settings
+
+\graphicspath{{images/}{../images/}}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                  DOCUMENT
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+
+% -----------------------------------------------------------------------------
+%                                  TITLE PAGE
+% -----------------------------------------------------------------------------
+
+\title{\Huge{\textbf{General Qualifying Exam Solutions 2020}}}
+\author{{Starkman}, Nathaniel \\
+   \and {Lokken}, Martine \\
+   \and {Ludwig}, Bethany \\
+   \and {Winch}, Harrison \\
+   \and {Sheere}, Connor
+}
+\date{\today}
+
+\begin{titlepage}
+
+	% \centering
+ %    \vspace*{0.5 cm}
+	% \textsc{\Large{University of Toronto, Astronomy \& Astrophysics}}\\[0.5 cm]	
+	% \rule{\linewidth}{0.2 mm} \\[0.4 cm]
+	% {\thetitle}
+	% \rule{\linewidth}{0.2 mm} \\[1.5 cm]
+	
+ %    \theauthor
+
+    \maketitle
+
+\end{titlepage}
+
+% -----------------------------------------------------------------------------
+%                                   PREFACE
+% -----------------------------------------------------------------------------
+
+\chapter*{Preface}
+\subfile{sections/introduction/introduction.tex}
+
+% -----------------------------------------------------------------------------
+%                                     TOC
+% -----------------------------------------------------------------------------
+
+\tableofcontents
+\let\tableofcontents\relax
+% \listoffigures
+% \listoftables
+
+% -----------------------------------------------------------------------------
+%                                  CHAPTERS
+% -----------------------------------------------------------------------------
+
+% Cosmology & Extragalactic
+\chapter{Cosmology}
+\subfile{sections/cosmology_and_extragalactic/cosmology_and_extragalactic.tex}
+% \includepdf[pages=-]{sections/cosmology/cosmology}  % FIXME! BAD WAY OF DOING IT!
+
+% Galaxies
+\newpage\newpage
+\chapter{Galaxies}
+\subfile{sections/galaxies/galaxies.tex}
+
+% Stars and planets
+\newpage\newpage
+\chapter{Stars and Planets}
+\subfile{sections/stars_and_planets/stars_and_planets.tex}
+
+% Physics and Fundamentals
+\newpage\newpage
+\chapter{Physics and Fundamentals}
+\subfile{sections/physics_and_fundamentals/physics_and_fundamentals.tex}
+
+
+%------------------------------------------------------------------------------
+\end{document}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%#

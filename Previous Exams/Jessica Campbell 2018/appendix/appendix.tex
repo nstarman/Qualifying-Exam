@@ -1,0 +1,3534 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{enumitem}
+\usepackage{multicol}
+\usepackage{mathtools}
+\usepackage{amsmath,amsthm,amssymb,cancel,bm}
+\usepackage{floatrow}
+\setcounter{tocdepth}{2}
+\usepackage{geometry}
+\geometry{total={210mm,297mm},
+left=25mm,right=25mm,%
+bindingoffset=0mm, top=20mm,bottom=20mm}
+\newcommand{\linia}{\rule{\linewidth}{0.5pt}}
+\AtBeginDocument{%
+   \setlength\abovedisplayskip{0pt}
+   \setlength\belowdisplayskip{5pt}}
+
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=blue,citecolor=green,filecolor=cyan,urlcolor=magenta}
+
+% my own titles
+\makeatletter
+\renewcommand{\maketitle}{
+\begin{center}
+\vspace{2ex}
+{\huge \textsc{\@title}}
+\vspace{1ex}
+\\
+\linia\\
+\@author
+\vspace{4ex}
+\end{center}
+}
+\makeatother
+
+% custom footers and headers
+\usepackage{fancyhdr,lastpage}
+\pagestyle{fancy}
+\lhead{}
+\chead{}
+\rhead{}
+\renewcommand{\headrulewidth}{0pt}
+\lfoot{General Qualifying Exam Solutions}
+\cfoot{}
+\rfoot{Page \thepage\ /\ \pageref*{LastPage}}
+
+% --------------------------------------------------------------
+%
+%                           TITLE PAGE
+%
+% --------------------------------------------------------------
+
+\begin{document}
+\hfill{\textit{Last modified \today}}
+\title{General Qualifying Exam Solutions: Appendix}
+\author{Jessica Campbell, Dunlap Institute for Astronomy \& Astrophysics (UofT)}
+\date{\today}
+\maketitle
+
+\tableofcontents
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                                      %
+%                                                      %
+%                      APPENDIX                        %
+%                                                      %
+%                                                      %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newpage
+\section{Appendix}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                                      %
+%                                                      %
+%                      ACRONYMS                        %
+%                                                      %
+%                                                      %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Acronyms}
+
+{\noindent}\textbf{A/C:} see \textit{ADC}
+
+{\noindent}\textbf{ADC:} analog-to-digital converter
+
+{\noindent}\textbf{ADU:} analog-to-digital unit
+
+{\noindent}\textbf{AGB:} asymptotic giant branch
+
+{\noindent}\textbf{AGN}: active galactic nuclei
+
+{\noindent}\textbf{ALMA}: Atacama Large Millimeter-Submillimeter Array
+
+{\noindent}\textbf{amu}: atomic mass unit
+
+{\noindent}\textbf{AU}: astronomical unit
+
+{\noindent}\textbf{BAOs:} baryonic acoustic oscillations
+
+{\noindent}\textbf{BB:} Big Bang or blackbody
+
+{\noindent}\textbf{BCD:} blue compact dwarf
+
+{\noindent}\textbf{BBN:} Big Bang nucleosynthesis
+
+{\noindent}\textbf{bf:} bound-free
+
+{\noindent}\textbf{BH:} black hole
+
+{\noindent}\textbf{BJ:} Balmer jump
+
+{\noindent}\textbf{CCD:} charged couple device
+
+{\noindent}\textbf{CCD:} colour-colour diagram
+
+{\noindent}\textbf{CCM:} Cardelli-Clayton-Mathis
+
+{\noindent}\textbf{CDM:} cold dark matter
+
+{\noindent}\textbf{cE:} compact elliptical
+
+{\noindent}\textbf{CGB:} cosmic gamma-ray background
+
+{\noindent}\textbf{CIB:} cosmic infrared background
+
+{\noindent}\textbf{CIB:} Cosmic Infrared Background
+
+{\noindent}\textbf{CMB:} Cosmic Microwave Background
+
+{\noindent}\textbf{CMD:} colour-magnitude diagram
+
+{\noindent}\textbf{CNB:} Cosmic Neutrino Background
+
+{\noindent}\textbf{CNM:} cold neutral medium
+
+{\noindent}\textbf{CNO:} carbon-nitrogen-oxygen
+
+{\noindent}\textbf{COBE:} COsmic Background Explorer
+
+{\noindent}\textbf{CR:} cosmic ray
+
+{\noindent}\textbf{CRB:} cosmic radio background
+
+{\noindent}\textbf{CTE:} charge transfer efficiency
+
+{\noindent}\textbf{CTI:} charge transfer inefficiency
+
+{\noindent}\textbf{CUVOB:} cosmic ultraviolet/optical background
+
+{\noindent}\textbf{CXB:} cosmic x-ray background
+
+{\noindent}\textbf{DDA:} discrete dipole approximation
+
+{\noindent}\textbf{DE:} dark energy
+
+{\noindent}\textbf{dE:} dwarf elliptical
+
+{\noindent}\textbf{DIBS:} diffuse interstellar bands
+
+{\noindent}\textbf{DM:} dark matter
+
+{\noindent}\textbf{DM:} distance modulus
+
+{\noindent}\textbf{DN:} digital number
+
+{\noindent}\textbf{dSph:} dwarf spheroidal
+
+{\noindent}\textbf{E:} elliptical
+
+{\noindent}\textbf{E-AGB:} early asymptotic giant branch
+
+{\noindent}\textbf{ELF}: extremely low frequency
+
+{\noindent}\textbf{EM:} electromagnetic
+
+{\noindent}\textbf{EOM:} equation of motion
+
+{\noindent}\textbf{EoR:} epoch of reionization
+
+{\noindent}\textbf{EOS:} equation of state
+
+{\noindent}\textbf{ERE:} extended red emission
+
+{\noindent}\textbf{FWHM:} full-width at half-maximum
+
+{\noindent}\textbf{ff:} free-free
+
+{\noindent}\textbf{FIR:} far infrared
+
+{\noindent}\textbf{GBT:} Green Bank Telescope
+
+{\noindent}\textbf{GC:} galactic center
+
+{\noindent}\textbf{GC:} globular cluster
+
+{\noindent}\textbf{gE:} giant elliptical
+
+{\noindent}\textbf{GMC:} giant molecular cloud
+
+{\noindent}\textbf{GP:} Gunn-Peterson
+
+{\noindent}\textbf{GR:} general relativity
+
+{\noindent}\textbf{GUT:} grand unified theory
+
+{\noindent}\textbf{GW:} gravitational wave
+
+{\noindent}\textbf{HB:} horizontal branch
+
+{\noindent}\textbf{HF}: high frequency
+
+{\noindent}\textbf{HIM}: hot ionized medium
+
+{\noindent}\textbf{HR}: Hertzsprung-Russel
+
+{\noindent}\textbf{HRD}: Hertzsprung-Russel diagram
+
+{\noindent}\textbf{HST}: Hubble Space Telescope
+
+{\noindent}\textbf{ICM:} intracluster medium
+
+{\noindent}\textbf{IGM:} intergalactic medium
+
+{\noindent}\textbf{IMF:} initial mass function
+
+{\noindent}\textbf{IR:} infrared
+
+{\noindent}\textbf{Irr:} irregular
+
+{\noindent}\textbf{ISM:} interstellar medium
+
+{\noindent}\textbf{KH:} Kelvin-Helmholtz
+
+{\noindent}\textbf{LCP:} left-handed circularly polarized
+
+{\noindent}\textbf{LAE:} Lyman-alpha emitter
+
+{\noindent}\textbf{LAT:} linear adiabatic theory
+
+{\noindent}\textbf{LBG:} Lyman break galaxy
+
+{\noindent}\textbf{LF}: low frequency
+
+{\noindent}\textbf{LG:} Local Group
+
+{\noindent}\textbf{LIGO:} Laser Interferometer Gravitational-Wave Observatory
+
+{\noindent}\textbf{LMC:} Large Magellanic Cloud
+
+{\noindent}\textbf{LNAT:} linear non-adiabatic theory
+
+{\noindent}\textbf{LTE:} local thermodynamic equilibrium
+
+{\noindent}\textbf{MACHO:} massive compact halo objects
+
+{\noindent}\textbf{MMR:} mass-magnitude relation
+
+{\noindent}\textbf{MRI:} magneto-rotational instability
+
+{\noindent}\textbf{MW:} Milky Way
+
+{\noindent}\textbf{MWG:} Milky Way Galaxy
+
+{\noindent}\textbf{NLTE:} non-local thermodynamic equilibrium
+
+{\noindent}\textbf{NS:} neutron star
+
+{\noindent}\textbf{ONC:} Orion Nebula cluster
+
+{\noindent}\textbf{PAH}: polycyclic aromatic hydrocarbon
+
+{\noindent}\textbf{pc}: parsec
+
+{\noindent}\textbf{PDMF}: present-day mass function
+
+{\noindent}\textbf{PDF}: probability distribution function
+
+{\noindent}\textbf{PDR}: photodissociation region
+
+{\noindent}\textbf{PGM}: pre-galactic medium
+
+{\noindent}\textbf{PL}: period-luminosity
+
+{\noindent}\textbf{PN:} planetary nebula
+
+{\noindent}\textbf{PSF} point-spread function
+
+{\noindent}\textbf{QE:} quantum efficiency
+
+{\noindent}\textbf{QFT:} quantum field theory
+
+{\noindent}\textbf{QSO:} quasi-stellar object
+
+{\noindent}\textbf{RCP:} right-handed circularly polarized
+
+{\noindent}\textbf{RGB:} red giant branch
+
+{\noindent}\textbf{RJ:} Rayleigh-Jeans
+
+{\noindent}\textbf{rms:} root-mean-square
+
+{\noindent}\textbf{RT:} radiative transfer
+
+{\noindent}\textbf{RTE:} radiative transfer equation
+
+{\noindent}\textbf{S:} spiral
+
+{\noindent}\textbf{SB:} barred spiral
+
+{\noindent}\textbf{SDSS:} Sloan Digital Sky Survey
+
+{\noindent}\textbf{SED:} spectral energy distribution
+
+{\noindent}\textbf{SETI:} search for extraterrestrial intelligence
+
+{\noindent}\textbf{SGB:} sub giant branch
+
+{\noindent}\textbf{SF:} star formation
+
+{\noindent}\textbf{SFR:} star formation rate
+
+{\noindent}\textbf{SFRD:} star formation rate density
+
+{\noindent}\textbf{SGB:} subgiant branch
+
+{\noindent}\textbf{SMA:} Submillimeter Array
+
+{\noindent}\textbf{SMC:} Small Magellanic Cloud
+
+{\noindent}\textbf{SMBH:} supermassive black hole
+
+{\noindent}\textbf{SMG:} sub-millimeter galaxy
+
+{\noindent}\textbf{S/N:} signal-to-noise
+
+{\noindent}\textbf{SNO:} Sudbury Neutrino Observatory
+
+{\noindent}\textbf{SNR} or \textbf{S/N:} signal-to-noise ratio
+
+{\noindent}\textbf{SNU:} solar neutrino unit
+
+{\noindent}\textbf{SST:} Spitzer Space Telescope
+
+{\noindent}\textbf{STMD:} spectral type - magnitude diagram
+
+{\noindent}\textbf{SZ:} Sunyaev-Zeldovich
+
+{\noindent}\textbf{SZE:} Sunyaev-Zeldovich effect
+
+{\noindent}\textbf{TE:} thermal equilibrium
+
+{\noindent}\textbf{TE:} thermodynamic equilibrium
+
+{\noindent}\textbf{TO:} turnoff
+
+{\noindent}\textbf{TRGB:} red giant branch tip
+
+{\noindent}\textbf{VLA:} Very Large Array
+
+{\noindent}\textbf{VLBI:} Very Long Baseline Interferometry
+
+{\noindent}\textbf{VLF}: very low frequency
+
+{\noindent}\textbf{WD:} white dwarf
+
+{\noindent}\textbf{WIM:} warm ionized medium
+
+{\noindent}\textbf{WIMP:} weakly interacting massive particle
+
+{\noindent}\textbf{WNM:} warm neutral medium
+
+{\noindent}\textbf{ZAMS:} zero age main sequence
+
+{\noindent}\textbf{$\Lambda$CDM:} $\Lambda$ cold dark matter
+
+{\noindent}\textbf{2dFGRS:} 2 degree Field Galactic Redshift Survey
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                                      %
+%                                                      %
+%                     VARIABLES                        %
+%                                                      %
+%                                                      %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newpage
+\subsection{Variables}
+
+{\noindent}\textbf{Absolute magnitude}: $M ~ [{\rm mag}]$
+
+{\noindent}\textbf{Absorption coefficient}: $\alpha_\nu ~ [{\rm cm^{-1}}]$
+
+{\noindent}\textbf{Absorption cross section}: $\sigma_{\ell u}(\nu) ~ [{\rm cm^{2}}]$
+
+{\noindent}\textbf{Absorption cross section (intrinsic)}: $\sigma_\nu^{\rm intr} ~ [{\rm cm^{2}}]$
+
+{\noindent}\textbf{Absorption line profile}: $\phi_\nu ~ [{\rm erg\,s^{-1}\,cm^{-2}\,sr^{-1}}]$
+
+{\noindent}\textbf{Absorption line profile (intrinsic)}: $\phi_\nu^{\rm intr} ~ [{\rm erg\,s^{-1}\,cm^{-2}\,sr^{-1}}]$
+
+{\noindent}\textbf{Absorption rate}: $\left(\dfrac{{\rm d}n_u}{{\rm d}t}\right)_{\ell\rightarrow u} ~ [{\rm s^{-1}}]$
+
+{\noindent}\textbf{Albedo}: $\omega ~ [{\rm dimensionless}]$
+
+{\noindent}\textbf{Ampere}: ${\rm A} ~ [{\rm unit}]$
+
+{\noindent}\textbf{Angstr\"{o}m}: \AA$ ~ [{\rm unit}]$
+
+{\noindent}\textbf{Angular diameter distance}: $d_A ~ [{\rm pc}]$
+
+{\noindent}\textbf{Angular momentum per unit mass}: $\vec{L} ~ [{\rm m^2\,s^{-1}\,kg^{-1}}]$
+
+{\noindent}\textbf{Angular offset (microlensing)}: $\delta ~ [{\rm rad}]$
+
+{\noindent}\textbf{Angular size}: $\theta ~ [{\rm rad}]$
+
+{\noindent}\textbf{Angular size (Einstein ring)}: $\theta_E ~ [{\rm rad}]$
+
+{\noindent}\textbf{Angular velocity}: $\Omega ~ [{\rm km\,s^{-1}\,kpc^{-1}}]$
+
+{\noindent}\textbf{Angular velocity (Solar value)}: $\Omega_0 ~ [{\rm rad\,s^{-1}}]$
+
+{\noindent}\textbf{Apocenter}: $r_2 ~ [{\rm AU}]$
+
+{\noindent}\textbf{Apparent magnitude}: $m ~ [{\rm mag}]$
+
+{\noindent}\textbf{Atomic number}: $Z ~ [{\rm dimensionless}]$
+
+{\noindent}\textbf{Attenuation}: see \textit{extinction}
+
+{\noindent}\textbf{Auxiliary magnetic field}: $\vec{H} ~ [{\rm A\,m^{-1}}]$
+
+{\noindent}\textbf{Avogadro's number}: $N_A ~ [{\rm mol^{-1}}]$
+
+{\noindent}\textbf{Azimuthal angle}: $\psi ~ [{\rm rad}]$
+
+{\noindent}\textbf{Azimuthal period}: $T_\psi ~ [{\rm yr}]$
+
+{\noindent}\textbf{Balmer jump}: ${\rm BJ} ~ [{\rm erg\,s^{-1}\,cm^{-2}\,Hz^{-1}\,sr^{-1}}]$
+
+{\noindent}\textbf{Baryon fraction}: $f_b ~ [{\rm dimensionless}]$
+
+{\noindent}\textbf{Baryon temperature}: $T_b ~ [{\rm K}]$
+
+{\noindent}\textbf{Binding energy}: $E_B ~ [{\rm MeV}]$
+
+{\noindent}\textbf{Binding energy of deuterium}: $E_\mathrm{B,D} ~ [{\rm MeV}]$
+
+{\noindent}\textbf{Binding energy of helium}: $E_\mathrm{B,He} ~ [{\rm MeV}]$
+
+{\noindent}\textbf{Binding energy of hydrogen}: $E_\mathrm{B,He} ~ [{\rm MeV}]$
+
+{\noindent}\textbf{Binding energy per nucleon}: $f ~ [{\rm MeV}]$
+
+{\noindent}\textbf{Binding fraction}: see \textit{Binding energy per nucleon}
+
+{\noindent}\textbf{Black hole mass}: $M_\bullet ~ [{\rm M_\odot}]$
+
+{\noindent}\textbf{Black hole radius of influence}: $r_\mathrm{BH} ~ [{\rm pc}]$
+
+{\noindent}\textbf{Black hole radius of influence (angular)}: $r_\mathrm{BH} ~ [{\rm arcsec}]$
+
+{\noindent}\textbf{Blackbody function}: $B_\nu(T) ~ [{\rm erg\,s^{-1}\,cm^{-2}\,Hz^{-1}\,sr^{-1}}]$
+
+{\noindent}\textbf{Bohr magneton}: $\mu_B ~ [{\rm erg\,G^{-1}}]$
+
+{\noindent}\textbf{Boltzmann constant}: $k_B ~ [{\rm m^2\,kg\,s^{-2}\,K^{-1}}]$
+
+{\noindent}\textbf{Bonnor-Ebert mass}: $M_{BE} ~ [{\rm M_\odot}]$
+
+{\noindent}\textbf{Broadening parameter}: $b ~ [{\rm km\,s^{-1}}]$
+
+{\noindent}\textbf{Brightness temperature}: $T_b ~ [{\rm K}]$
+
+{\noindent}\textbf{Brightness temperature of radio source}: $T_r ~ [{\rm K}]$
+
+{\noindent}\textbf{Central temperature}: $T_c ~ [{\rm K}]$
+
+{\noindent}\textbf{Chandrasekhar mass}: $M_C ~ [{\rm M_\odot}]$
+
+{\noindent}\textbf{Characteristic frequency (synchrotron)}: $\nu_c ~ [{\rm Hz}]$
+
+{\noindent}\textbf{Charge}: $q ~ [{\rm C}]$
+
+{\noindent}\textbf{CMB power spectrum amplitude}: $C_\ell ~ [{\rm \mu K^2}]$
+
+{\noindent}\textbf{CMB temperature}: $T_\mathrm{CMB} ~ [{\rm K}]$
+
+{\noindent}\textbf{CMB temperature fluctuations}: $\Delta T/T ~ [{\rm dimensionless}]$
+
+{\noindent}\textbf{CNB temperature}: $T_\mathrm{CNB} ~ [{\rm K}]$
+
+{\noindent}\textbf{Coefficient of conduction}: $k_{\rm rad} ~ [{\rm erg\,cm^{-1}\,K^{-1}\,s^{-1}}]$
+
+{\noindent}\textbf{Collision rate}: $r ~ [{\rm s^{-1}\,m^{-3}}]$
+
+{\noindent}\textbf{Collisional coupling for species $i$}: $x_c^i ~ [{\rm dimensionless}]$
+
+{\noindent}\textbf{Collisional excitation rate}: $C_{10} ~ [{\rm s^{-1}}]$
+
+{\noindent}\textbf{Colour excess ($B-V$)}: $E(B-V) ~ [{\rm mag}]$
+
+{\noindent}\textbf{Combinations}: $C ~ [{\rm dimensionless}]$
+
+{\noindent}\textbf{Comoving sound horizon}: $r_\mathrm{H,com} ~ [{\rm Mpc}]$
+
+{\noindent}\textbf{Complex visibility}: $\mathcal{V} ~ [{\rm V^2}]$
+
+{\noindent}\textbf{Compton y-parameter}: $y ~ [{\rm dimensionless}]$
+
+{\noindent}\textbf{Cooling rate per unit mass}: $\Lambda ~ [{\rm J\,kg^{-1}\,s^{-1}}]$
+
+{\noindent}\textbf{Cooling functions}: $\Lambda ~ [{\rm J\,cm^3\,s^{-1}}]$
+
+{\noindent}\textbf{Core density}: $\rho_c ~ [{\rm g\,cm^{-3}}]$
+
+{\noindent}\textbf{Core mass}: $M_c ~ [{\rm M_\odot}]$
+
+{\noindent}\textbf{Core radius}: $R_c ~ [{\rm pc}]$
+
+{\noindent}\textbf{Correlation function}: $C(\theta) ~ [{\rm dimensionless}]$
+
+{\noindent}\textbf{Correlator response (interferometer)}: $R ~ [{\rm V^2}]$
+
+{\noindent}\textbf{Cosmological constant}: $\Lambda ~ [{\rm m^{-2}}]$
+
+{\noindent}\textbf{Coulomb}: ${\rm C} ~ [{\rm unit}]$
+
+{\noindent}\textbf{Coulomb energy}: $E_{\rm Coul} ~ [{\rm MeV}]$
+
+{\noindent}\textbf{Coulomb logarithm}: $\ln\Lambda ~ [{\rm dimensionless}]$
+
+{\noindent}\textbf{Coupling coefficient of collisions}: $x_c ~ [{\rm dimensionless}]$
+
+{\noindent}\textbf{Coupling coefficient of Ly$\alpha$ scattering}: $x_\alpha ~ [{\rm dimensionless}]$
+
+{\noindent}\textbf{Coupling coefficient (total)}: $x_\mathrm{tot} ~ [{\rm dimensionless}]$
+
+{\noindent}\textbf{Critical density}: $\rho_c ~ [{\rm g\,cm^{-3}}]$
+
+{\noindent}\textbf{Critical density}: $\rho_\mathrm{crit} ~ [{\rm g\,cm^{-3}}]$
+
+{\noindent}\textbf{Cross section}: $\sigma ~ [{\rm cm^{2}}]$
+
+{\noindent}\textbf{Cross section (absorption)}: $C_{\rm abs} ~ [{\rm cm^{2}}]$
+
+{\noindent}\textbf{Cross section (extinction)}: $C_{\rm ext} ~ [{\rm cm^{2}}]$
+
+{\noindent}\textbf{Cross section (radiation pressure)}: $C_{\rm pr} ~ [{\rm cm^{2}}]$
+
+{\noindent}\textbf{Cross section (scattering)}: $C_{\rm sca} ~ [{\rm cm^{2}}]$
+
+{\noindent}\textbf{Crossing timescale}: $t_\mathrm{cross} ~ [{\rm yr}]$
+
+{\noindent}\textbf{Curvature term}: $S_\kappa(r) ~ [{\rm Mpc}]$
+
+{\noindent}\textbf{Dark energy density}: $\rho_\Lambda ~ [{\rm g\,cm^{-3}}]$
+
+{\noindent}\textbf{Deceleration parameter}: $q_0 ~ [{\rm dimensionless}]$
+
+{\noindent}\textbf{Deflection angle (gravitational lensing)}: $\alpha ~ [{\rm rad}]$
+
+{\noindent}\textbf{Deflection angle (gravitational lensing, Solar value)}: $\alpha_\odot ~ [{\rm rad}]$
+
+{\noindent}\textbf{Degeneracy}: \textit{see statistical weight}
+
+{\noindent}\textbf{Density}: $\rho ~ [{\rm kg\,m^{-3}~{\rm or}~g\,cm^{-3}}]$
+
+{\noindent}\textbf{Density (atomic nucleus)}: $\rho_{\rm nuc} ~ [{\rm kg\,m^{-3}~{\rm or}~g\,cm^{-3}}]$
+
+{\noindent}\textbf{Density (baryons)}: $\rho_b ~ [{\rm m^{-3}}]$
+
+{\noindent}\textbf{Density (dark energy)}: $\rho_\Lambda ~ [{\rm kg\,m^{-3}}]$
+
+{\noindent}\textbf{Density (neutrinos)}: $\rho_\nu ~ [{\rm m^{-3}}]$
+
+{\noindent}\textbf{Density (neutrons)}: $\rho_b ~ [{\rm m^{-3}}]$
+
+{\noindent}\textbf{Density (protons)}: $\rho_b ~ [{\rm m^{-3}}]$
+
+{\noindent}\textbf{Density (Solar value)}: $\rho_\odot ~ [{\rm g\,cm^{-3}}]$
+
+{\noindent}\textbf{Density (vacuum)}: $\rho_\mathrm{vac} ~ [{\rm eV\,m^{-3}}]$
+
+{\noindent}\textbf{Density contrast}: $\delta(\mathbf{x},t) ~ [{\rm dimensionless}]$
+
+{\noindent}\textbf{Density parameter}: $\Omega_i ~ [{\rm dimensionless}]$
+
+{\noindent}\textbf{Density parameter (baryonic matter}: $\Omega_b ~
+[{\rm dimensionless}]$
+
+{\noindent}\textbf{Density parameter (curvature}: $\Omega_\kappa ~ [{\rm dimensionless}]$
+
+{\noindent}\textbf{Density parameter (dark energy)}: $\Omega_\Lambda ~ [{\rm dimensionless}]$
+
+{\noindent}\textbf{Density parameter (dark matter)}: $\Omega_c ~ [{\rm dimensionless}]$
+
+{\noindent}\textbf{Density parameter (matter)}: $\Omega_m ~ [{\rm dimensionless}]$
+
+{\noindent}\textbf{Density parameter (neutrinos)}: $\Omega_\nu ~ [{\rm dimensionless}]$
+
+{\noindent}\textbf{Density parameter (radiation)}: $\Omega_r ~ [{\rm dimensionless}]$
+
+{\noindent}\textbf{Density perturbation field}: $\delta(\mathbf{x},t) ~ [{\rm dimensionless}]$
+
+{\noindent}\textbf{Density PDF}: $p(\rho) ~ [{\rm function}]$
+
+{\noindent}\textbf{Deuterium}: ${\rm D} ~ [{\rm element}]$
+
+{\noindent}\textbf{Deviation}: $d_i ~ [{\rm function}]$
+
+{\noindent}\textbf{Deviation (average)}: $\alpha ~ [{\rm function}]$
+
+{\noindent}\textbf{Deviation (standard)}: see \textit{standard deviation}
+
+{\noindent}\textbf{Diffusion coefficient}: $D ~ [{\rm s^{-1}}]$
+
+{\noindent}\textbf{Diffusive flux}: $\vec{j} ~ [{\rm m^{-2}\,s^{-1}}]$
+
+{\noindent}\textbf{Dimensionless density}: $\theta ~ [{\rm dimensionless}]$
+
+{\noindent}\textbf{Dimensionless radius}: $\xi ~ [{\rm dimensionless}]$
+
+{\noindent}\textbf{Dimensionless variables for Lane-Emden equation}: $z, w ~ [{\rm dimensionless}]$
+
+{\noindent}\textbf{Dipole moment}: $\vec{d} ~ [{\rm C\,m}]$
+
+{\noindent}\textbf{Disk scale length}: $h_R ~ [{\rm Mpc}]$
+
+{\noindent}\textbf{Distance}: $d ~ [{\rm m}]$
+
+{\noindent}\textbf{Distance (gravitational lens)}: $d_L ~ [{\rm m}]$
+
+{\noindent}\textbf{Distance (gravitational lensing source)}: $d_S ~ [{\rm m}]$
+
+{\noindent}\textbf{Distance modulus}: $m - M ~ [{\rm mag}]$
+
+{\noindent}\textbf{Dust abundance (scaled to Solar neighborhood value)}: $Z_d' ~ [{\rm dimensionless}]$
+
+{\noindent}\textbf{Dust optical depth}: $\tau_d ~ [{\rm dimensionless}]$
+
+{\noindent}\textbf{Eccentricity}: $e ~ [{\rm dimensionless}]$
+
+{\noindent}\textbf{Eddington luminosity}: $L_E ~ [{\rm J\,s^{-1}}]$
+
+{\noindent}\textbf{Effective radius of dust grain}: $a_{\rm eff} ~ [{\rm \mu m}]$
+
+{\noindent}\textbf{Efficiency factor (absorption)}: $Q_{\rm abs} ~ [{\rm cm^{-2}}]$
+
+{\noindent}\textbf{Efficiency factor (extinction)}: $Q_{\rm ext} ~ [{\rm cm^{-2}}]$
+
+{\noindent}\textbf{Efficiency factor (scattering)}: $Q_{\rm sca} ~ [{\rm cm^{-2}}]$
+
+{\noindent}\textbf{Effective number of neutrino families}: $N_\mathrm{eff} ~ [{\rm dimensionless}]$
+
+{\noindent}\textbf{Effective radius}: $R_e~{\rm or}~r_e ~ [{\rm Mpc}]$
+
+{\noindent}\textbf{Einstein A coefficient (spontaneous emission)}: $A_{ul} ~ [{\rm s^{-1}}]$
+
+{\noindent}\textbf{Einstein B coefficient (spontaneous absorption)}: $B_{lu} ~ [{\rm s^{-1}}]$
+
+{\noindent}\textbf{Einstein B coefficient (stimulated emission)}: $B_{ul} ~ [{\rm s^{-1}}]$
+
+{\noindent}\textbf{Electric field}: $\vec{E} ~ [{\rm N\,C^{-1}}]$
+
+{\noindent}\textbf{Electric polarizability}: $\alpha ~ [{\rm C\,m^2\,V^{-1}}]$
+
+{\noindent}\textbf{Electrical conductivity}: $\sigma ~ [{\rm S\,m^{-1}}]$
+
+{\noindent}\textbf{Electron}: $e^- ~ [{\rm particle}]$
+
+{\noindent}\textbf{Electronvolt}: ${\rm eV} ~ [{\rm unit}]$
+
+{\noindent}\textbf{Electron optical depth}: $\tau_e ~ [{\rm dimensionless}]$
+
+{\noindent}\textbf{Electroweak age}: $t_\mathrm{ew} ~ [{\rm s}]$
+
+{\noindent}\textbf{Electroweak energy}: $E_\mathrm{ew} ~ [{\rm TeV}]$
+
+{\noindent}\textbf{Electroweak temperature}: $T_\mathrm{ew} ~ [{\rm K}]$
+
+{\noindent}\textbf{Electron radius (classical)}: $r_{e,0} ~ [{\rm cm}]$
+
+{\noindent}\textbf{Elliptical $D_n$}: $D_n ~ [{\rm pc}]$
+
+{\noindent}\textbf{Ellipticity}: $\epsilon ~ [{\rm dimensionless}]$
+
+{\noindent}\textbf{Emission coefficient}: $j_\nu ~ [{\rm cm^{-1}}]$
+
+{\noindent}\textbf{Emissivity index}: $\beta ~ [{\rm dimensionless}]$
+
+{\noindent}\textbf{Energy}: $E ~ [{\rm eV\,or\,J}]$
+
+{\noindent}\textbf{Energy (lower state)}: $E_\ell ~ [{\rm eV}]$
+
+{\noindent}\textbf{Energy (upper state)}: $E_u ~ [{\rm eV}]$
+
+{\noindent}\textbf{Energy density}: \textit{see density parameter}
+
+{\noindent}\textbf{Energy of CMB photons}: $E_\mathrm{CMB} ~ [{\rm eV}]$
+
+{\noindent}\textbf{Energy of photons}: $E_\gamma ~ [{\rm eV}]$
+
+{\noindent}\textbf{Energy produced per nuclear reaction}: $Q ~ [{\rm eV}]$
+
+{\noindent}\textbf{Energy produced per kilogram of stellar material}: $\epsilon ~ [{\rm W\,kg^{-1}}]$
+
+{\noindent}\textbf{Energy produced per kilogram of stellar material (pp chain)}: $\epsilon_{pp} ~ [{\rm W\,kg^{-1}}]$
+
+{\noindent}\textbf{Escape velocity}: $v_\mathrm{esc} ~ [{\rm km\,s^{-1}}]$
+
+{\noindent}\textbf{Excitation temperature}: $T_{ex} ~ [{\rm K}]$
+
+{\noindent}\textbf{Extinction}: $A_\nu~{\rm or}~A_\lambda ~ [{\rm mag}]$
+
+{\noindent}\textbf{Extinction coefficient}: see \textit{extinction}
+
+{\noindent}\textbf{Extinction coefficient for the MWG}: $A_{V,\mathrm{MWG}} ~ [{\rm mag}]$
+
+{\noindent}\textbf{Farad}: ${\rm F} ~ [{\rm unit}]$
+
+{\noindent}\textbf{Fermi energy}: $E_F ~ [{\rm J}]$
+
+{\noindent}\textbf{Flux}: $F ~ [{\rm erg\,s^{-1}\,cm^{-2}}]$
+
+{\noindent}\textbf{Flux (conductive)}: $F_{\rm cd} ~ [{\rm erg\,s^{-1}\,cm^{-2}}]$
+
+{\noindent}\textbf{Flux (convective)}: $F_{\rm con} ~ [{\rm erg\,s^{-1}\,cm^{-2}}]$
+
+{\noindent}\textbf{Flux (radiative)}: $F_{\rm rad} ~ [{\rm erg\,s^{-1}\,cm^{-2}}]$
+
+{\noindent}\textbf{Flux (spectral)}: $F_\nu ~ [{\rm erg\,s^{-1}\,cm^{-2}\,Hz^{-1}}]$
+
+{\noindent}\textbf{Free-fall time}: $\tau_{\rm ff} ~ [{\rm yr}]$
+
+{\noindent}\textbf{Free-fall velocity}: $v_{\rm ff} ~ [{\rm km\,s^{-1}}]$
+
+{\noindent}\textbf{Frequency}: $\nu ~ [{\rm Hz}]$
+
+{\noindent}\textbf{Fringe phase (interferometer)}: $\phi ~ [{\rm rad}]$
+
+{\noindent}\textbf{Fourier transform}: $P(k) ~ [{\rm function}]$
+
+{\noindent}\textbf{Fractional ionization}: $x_x ~ [{\rm dimensionless}]$
+
+{\noindent}\textbf{Fractional polarization}: see \textit{polarization fraction}
+
+{\noindent}\textbf{Full-width at half maximum}: $\Gamma ~ [{\rm ~ function}]$
+
+{\noindent}\textbf{FUV intensity}: $\chi_{\rm FUV} ~ [{\rm erg\,s^{-1}\,cm^{-2}\,sr^{-1}}]$
+
+{\noindent}\textbf{Gas surface mass density}: $\Sigma_\mathrm{gas} ~ {\rm M_\odot\,pc^{-2}}$
+
+{\noindent}\textbf{Galactic latitude}: $b ~ [{\rm deg}]$
+
+{\noindent}\textbf{Galactic longitude}: $\ell ~ [{\rm deg}]$
+
+{\noindent}\textbf{Gas temperature}: $T_g ~ [{\rm K}]$
+
+{\noindent}\textbf{Gaunt factor}: $g ~ [{\rm dimensionless}]$
+
+{\noindent}\textbf{Geometric delay}: $\tau_g ~ [{\rm s}]$
+
+{\noindent}\textbf{Gravitational acceleration (norm)}: $g ~ [{\rm m\,s^{-2}}]$
+
+{\noindent}\textbf{Gravitational acceleration (vector)}: $\vec{g} ~ [{\rm m\,s^{-2}}]$
+
+{\noindent}\textbf{Gravitational potential}: $\Phi(r) ~ [{\rm J\,kg^{-1}}]$
+
+{\noindent}\textbf{Gravitational potential energy}: $E_g ~ [{\rm J}]$
+
+{\noindent}\textbf{Gravitational radius}: $R_g ~ [{\rm km}]$
+
+{\noindent}\textbf{Guiding center radius}: $R_g ~ [{\rm AU}]$
+
+{\noindent}\textbf{GUT age}: $t_\mathrm{GUT} ~ [{\rm s}]$
+
+{\noindent}\textbf{GUT energy}: $E_\mathrm{GUT} ~ [{\rm TeV}]$
+
+{\noindent}\textbf{GUT temperature}: $T_\mathrm{GUT} ~ [{\rm K}]$
+
+{\noindent}\textbf{Gravitational constant}: $G ~ [{\rm m^3\,kg^{-1}\,s^{-2}}]$
+
+{\noindent}\textbf{Gravitational wave fields}: $h_+\,{\rm and}\,h_\times ~
+[{\rm dimensionless}]$
+
+{\noindent}\textbf{Gravitational wave phase shift}: $\Delta\Phi ~ [{\rm rad}]$
+
+{\noindent}\textbf{Gravitational wave strain}: $h(t) ~ [{\rm dimensionless}]$
+
+{\noindent}\textbf{Grazing angle}: $\alpha ~ [{\rm deg}]$
+
+{\noindent}\textbf{Growth factor}: $D_+(t) ~ [{\rm dimensionless}]$
+
+{\noindent}\textbf{Gunn-Peterson optical depth}: $\tau_\mathrm{GP} ~ [{\rm dimensionless}]$
+
+{\noindent}\textbf{Gunn-Peterson oscillator strength}: $f_\alpha ~ [{\rm dimensionless}]$
+
+{\noindent}\textbf{Hamiltonian per unit mass}: $H ~ [{\rm j\,kg^{-1}}]$
+
+{\noindent}\textbf{Harrison-Zeldovich power spectrum}: $P(k) ~ [{\rm \mu K^2}]$
+
+{\noindent}\textbf{Hayashi temperature}: $T_H ~ [{\rm K}]$
+
+{\noindent}\textbf{Heating rate per unit mass}: $\Gamma ~ [{\rm J\,kg^{-1}\,s^{-1}}]$
+
+{\noindent}\textbf{Helium}: ${\rm He} ~ [{\rm element}]$
+
+{\noindent}\textbf{Helium mass fraction}: $Y ~ [{\rm dimensionless}]$
+
+{\noindent}\textbf{Henry}: ${\rm H} ~ [{\rm unit}]$
+
+{\noindent}\textbf{Horizon angular size}: $\theta_\mathrm{hor} ~ [{\rm rad}]$
+
+{\noindent}\textbf{Horizon angular size (at recombination)}: $\theta_\mathrm{hor,rec} ~ [{\rm rad}]$
+
+{\noindent}\textbf{Horizon distance}: $d_\mathrm{hor} ~ [{\rm Mpc}]$
+
+{\noindent}\textbf{Hubble constant}: $H_0 ~ [{\rm km\,s^{-1}\,Mpc}]$
+
+{\noindent}\textbf{Hubble distance}: $d_H ~ [{\rm Mpc}]$
+
+{\noindent}\textbf{Hubble time}: $t_H ~ [{\rm Gyr}]$
+
+{\noindent}\textbf{Hydrogen (atomic)}: ${\rm H} ~ [{\rm element}]$
+
+{\noindent}\textbf{Hydrogen (molecular)}: ${\rm H_2} ~ [{\rm element}]$
+
+{\noindent}\textbf{Gain}: $G ~ [{\rm electrons\,ADU^{-1}}]$
+
+{\noindent}\textbf{Gyration frequency of charged particles in $\vec{B}$}: $\omega_B ~ [{\rm Hz}]$
+
+{\noindent}\textbf{IMF}: $\xi(m) ~ [{\rm dimensionless}]$
+
+{\noindent}\textbf{IMF peak mass}: $M_\mathrm{peak} ~ [{\rm M_\odot}]$
+
+{\noindent}\textbf{Impact parameter}: $b ~ [{\rm pc}]$
+
+{\noindent}\textbf{Index of refraction}: $n ~ [{\rm dimensionless}]$
+
+{\noindent}\textbf{Inflationary period}: ${\rm t_\mathrm{inflate}} ~ [{\rm s}]$
+
+{\noindent}\textbf{Initial mass doubling time}: $(M_0/\dot{M}_0) ~ [{\rm yr}]$
+
+{\noindent}\textbf{Intensity}: $I ~ [{\rm erg\,s^{-1}\,cm^{-2}\,sr^{-1}}]$
+
+{\noindent}\textbf{Interferometer arm-length difference}: $\Delta L ~ [{\rm m}]$
+
+{\noindent}\textbf{Isochrone potential}: $\Phi(r) ~ [{\rm J}]$
+
+{\noindent}\textbf{Jeans mass}: $M_J ~ [{\rm M_\odot}]$
+
+{\noindent}\textbf{Jeans length}: $\lambda_J ~ [{\rm m}]$
+
+{\noindent}\textbf{Jeans number}: $n_J ~ [{\rm dimensionless}]$
+
+{\noindent}\textbf{Jeans wavenumber}: $\kappa_J ~ [{\rm m^{-1}}]$
+
+{\noindent}\textbf{Joule}: ${\rm J} ~ [{\rm unit}]$
+
+{\noindent}\textbf{Kelvin-Helmholtz timescale}: $t_{\rm KH} ~ [{\rm yr}]$
+
+{\noindent}\textbf{Kinetic energy}: $E_\mathrm{kin} ~ [{\rm J}]$
+
+{\noindent}\textbf{Kinetic temperature}: $T_k ~ [{\rm K}]$
+
+{\noindent}\textbf{Lagrangian per unit mass}: $\mathcal{L} ~ [{\rm J}]$
+
+{\noindent}\textbf{Lagrangian per unit mass}: $\mathcal{L} ~ [{\rm J\,kg^{-1}}]$
+
+{\noindent}\textbf{Light travel time}: $t ~ [{\rm yr}]$
+
+{\noindent}\textbf{Line profile}: $\phi(\nu) ~ [{\rm erg\,s^{-1}\,cm^{-2}\,sr^{-1}}]$
+
+{\noindent}\textbf{Line profile (intrinsic)}: $\phi_\nu^{\rm intr} ~ [{\rm erg\,s^{-1}\,cm^{-2}\,sr^{-1}}]$
+
+{\noindent}\textbf{Lithium}: ${\rm Li} ~ [{\rm element}]$
+
+{\noindent}\textbf{Lorentz factor}: $\gamma ~ [{\rm dimensionless}]$
+
+{\noindent}\textbf{Lorentz line profile}: $\phi_\nu ~ [{\rm erg\,s^{-1}\,cm^{-2}\,sr^{-1}}]$
+
+{\noindent}\textbf{Luminosity}: $L ~ [{\rm erg\,s^{-1}}]$
+
+{\noindent}\textbf{Luminosity (bolometric)}: $L_{\rm bol} ~ [{\rm erg\,s^{-1}}]$
+
+{\noindent}\textbf{Luminosity (envelope base)}: $L_B ~ [{\rm erg\,s^{-1}}]$
+
+{\noindent}\textbf{Luminosity (Faber-Jackson)}: $L_\mathrm{FJ} ~ [{\rm erg\,s^{-1}}]$
+
+{\noindent}\textbf{Luminosity (nuclear)}: $L_N ~ [{\rm erg\,s^{-1}}]$
+
+{\noindent}\textbf{Luminosity (sub-mm)}: $L_{\rm smm} ~ [{\rm erg\,s^{-1}}]$
+
+{\noindent}\textbf{Luminosity (surface)}: $L_S ~ [{\rm erg\,s^{-1}}]$
+
+{\noindent}\textbf{Luminosity (synchrotron)}: $L_\nu ~ [{\rm erg\,s^{-1}}]$
+
+{\noindent}\textbf{Luminosity (Tully-Fisher)}: $L_\mathrm{TF} ~ [{\rm erg\,s^{-1}}]$
+
+{\noindent}\textbf{Luminosity distance}: $d_L ~ [{\rm Mpc}]$
+
+{\noindent}\textbf{Luminosity of the Sun}: $L_\odot ~ [{\rm W}]$
+
+{\noindent}\textbf{Luminosity of type Ia SN (at peak)}: $L_\mathrm{1a} ~ [{\rm L_\odot}]$
+
+{\noindent}\textbf{Luminosity distance}: $d_L ~ [{\rm Mpc}]$
+
+{\noindent}\textbf{Lyman-$\alpha$ rest wavelength}: $\lambda_\alpha$\,[\AA]
+
+{\noindent}\textbf{Lyman-$\alpha$ temperature}: $T_\alpha ~ [{\rm K}]$
+
+{\noindent}\textbf{Magnetic field}: $\vec{B} ~ [{\rm G}]$
+
+{\noindent}\textbf{Magnetic monopole density}: $n_M ~ [{\rm m^{-3}}]$
+
+{\noindent}\textbf{Magnetic monopole mass}: $m_M ~ [{\rm kg}]$
+
+{\noindent}\textbf{Magnetic permeability}: $\mu ~ [{\rm H\,m^{-1}}]$
+
+{\noindent}\textbf{tion (microlensing)}: $A_i ~ [{\rm dimensionless}]$
+
+{\noindent}\textbf{Magnitude (absolute)}: $M ~ [{\rm mag}]$
+
+{\noindent}\textbf{Magnitude (apparent)}: $m ~ [{\rm mag}]$
+
+{\noindent}\textbf{Mass}: $m\,{\rm or}\,M ~ [{\rm kg}]$
+
+{\noindent}\textbf{Mass (luminous matter)}: $M_{\rm lum} ~ [{\rm kg}]$
+
+{\noindent}\textbf{Mass (neutron star)}: $M_{\rm ns} ~ [{\rm kg}]$
+
+{\noindent}\textbf{Mass absorption coefficient}: $\kappa_\nu ~ [{\rm cm^2\,g^{-1}}]$
+
+{\noindent}\textbf{Mass accretion rate index}: $\eta ~ [{\rm dimensionless}]$
+
+{\noindent}\textbf{Mass number}: $A ~ [{\rm dimensionless}]$
+
+{\noindent}\textbf{Mass of nucleus}: $M_{\rm nuc} ~ [{\rm kg}]$
+
+{\noindent}\textbf{Mass of the stellar population}: $M_* ~ [{\rm kg}]$
+
+{\noindent}\textbf{Mass of the Sun}: $M_\odot ~ [{\rm kg}]$
+
+{\noindent}\textbf{Mass surface density}: $\Sigma ~ [{\rm M_\odot\,pc^{-2}}]$
+
+{\noindent}\textbf{Mean (of distribution)}: $\bar{x} ~ [{\rm function}]$
+
+{\noindent}\textbf{Mean (of parent population)}: $\mu ~ [{\rm function}]$
+
+{\noindent}\textbf{Mean free path}: $\ell ~ [{\rm cm}]$
+
+{\noindent}\textbf{Mean free path (Solar value)}: $\ell_{{\rm mfp},\odot} ~ [{\rm cm}]$
+
+{\noindent}\textbf{Mean molecular weight}: $\mu ~ [{\rm dimensionless}]$
+
+{\noindent}\textbf{Megaelectronvolt}: ${\rm MeV} ~ [{\rm unit}]$
+
+{\noindent}\textbf{Metallicity}: $Z~{\rm or}~[{\rm Fe/H}] ~ [{\rm dimensionless}]$
+
+{\noindent}\textbf{Mixing length}: $\ell_m ~ [{\rm cm}]$
+
+{\noindent}\textbf{Moment of inertia}: $I ~ [{\rm kg\,m^2}]$
+
+{\noindent}\textbf{Muller matrix}: $S_{ij} ~ [{\rm \mu dimensionless}]$
+
+{\noindent}\textbf{Multipole moment}: $C_\ell ~ [{\rm \mu K^2}]$
+
+{\noindent}\textbf{$n$ over $x$}: $\binom{n}{x} ~ [{\rm dimensionless}]$
+
+{\noindent}\textbf{Neutral fraction of hydrogen}: $x_\mathrm{HI} ~ [{\rm dimensionless}]$
+
+{\noindent}\textbf{Neutron}: $n ~ [{\rm particle}]$
+
+{\noindent}\textbf{Neutrino}: $\nu ~ [{\rm particle}]$
+
+{\noindent}\textbf{Neutrino temperature}: $T_\nu ~ [{\rm K}]$
+
+{\noindent}\textbf{Neutrino velocity}: $v_\nu ~ [{\rm km\,s^{-1}}]$
+
+{\noindent}\textbf{Newton}: ${\rm N} ~ [{\rm unit}]$
+
+{\noindent}\textbf{Nuclear radius}: $r_0 ~ [{\rm fm}]$
+
+{\noindent}\textbf{Nuclear reaction rates}: $r_{jk} ~ [{\rm fm}]$
+
+{\noindent}\textbf{Number density}: $n ~ [{\rm m^{-3}}]$
+
+{\noindent}\textbf{Number density (baryons)}: $n_b ~ [{\rm m^{-3}}]$
+
+{\noindent}\textbf{Number density (electrons)}: $n_e ~ [{\rm m^{-3}}]$
+
+{\noindent}\textbf{Number density (Lyman-$\alpha$ forest lines)}: $N_\alpha(z) ~ [{\rm dimensionless}]$
+
+{\noindent}\textbf{Number density (neutrons)}: $n_n ~ [{\rm m^{-3}}]$
+
+{\noindent}\textbf{Number density (protons)}: $n_p ~ [{\rm m^{-3}}]$
+
+{\noindent}\textbf{Number density (synchrotron energy)}: $n(\gamma) ~ [{\rm eV^{-1}}]$
+
+{\noindent}\textbf{Oort constants}: $A,B ~ [{\rm s^{-1}}]$
+
+{\noindent}\textbf{Opacity}: $\kappa_\nu ~ [{\rm cm^2\,g^{-1}}]$
+
+{\noindent}\textbf{Opacity (conductive)}: $\kappa_{\rm cd} ~ [{\rm cm^2\,g^{-1}}]$
+
+{\noindent}\textbf{Opacity (radiative)}: $\kappa_{\rm rad} ~ [{\rm cm^2\,g^{-1}}]$
+
+{\noindent}\textbf{Opacity (Planck mean)}: $\kappa_P ~ [{\rm cm^2\,g^{-1}}]$
+
+{\noindent}\textbf{Opacity (dust)}: $\kappa_d ~ [{\rm cm^2\,g^{-1}}]$
+
+{\noindent}\textbf{Optical depth}: $\tau ~ [{\rm dimensionless}]$
+
+{\noindent}\textbf{Parallax}: $p ~ [{\rm rad~or~^\circ}]$
+
+{\noindent}\textbf{Parsec}: ${\rm pc} ~ [{\rm unit}]$
+
+{\noindent}\textbf{Pascal}: ${\rm P} ~ [{\rm unit}]$
+
+{\noindent}\textbf{Peculiar velocity}: $v_{\rm pec} ~ [{\rm km\,s^{-1}}]$
+
+{\noindent}\textbf{Pericenter}: $r_1 ~ [{\rm AU}]$
+
+{\noindent}\textbf{Period}: $P ~ [{\rm yr}]$
+
+{\noindent}\textbf{Permittivity (vacuum)}: $\epsilon ~ [{\rm F\,m^{-1}}]$
+
+{\noindent}\textbf{Permutations}: $Pm(n,x) ~ [{\rm dimensionless}]$
+
+{\noindent}\textbf{Phase}: $\phi ~ [{\rm rad}]$
+
+{\noindent}\textbf{Photon}: $\gamma ~ [{\rm particle}]$
+
+{\noindent}\textbf{Photon occupancy number}: $n_\gamma ~ [{\rm dimensionless}]$
+
+{\noindent}\textbf{Photon temperature}: $T_\gamma ~ [{\rm K}]$
+
+{\noindent}\textbf{Photon scattering rate (ionized)}: $\Gamma ~ [{\rm s^{-1}}]$
+
+{\noindent}\textbf{Pitch angle}: $\theta ~ [{\rm deg}]$
+
+{\noindent}\textbf{Planck constant}: $h ~ [{\rm m^2\,kg\,s^{-1}}]$
+
+{\noindent}\textbf{Planck constant (reduced)}: $\hbar ~ [{\rm m^2\,kg\,s^{-1}}]$
+
+{\noindent}\textbf{Planck energy}: $E_P ~ [{\rm eV}]$
+
+{\noindent}\textbf{Planck function}: $B_\nu(T) ~ [{\rm erg\,s^{-1}\,cm^{-2}\,Hz^{-1}\,sr^{-1}}]$
+
+{\noindent}\textbf{Planck length}: $\ell_P ~ [{\rm m}]$
+
+{\noindent}\textbf{Planck mass}: $m_P ~ [{\rm kg}]$
+
+{\noindent}\textbf{Planck time}: $t_P ~ [{\rm s}]$
+
+{\noindent}\textbf{Polarization fraction}: $p ~ [{\rm dimensionless}]$
+
+{\noindent}\textbf{Polarization fraction (max value)}: $p_\mathrm{max} ~ [{\rm dimensionless}]$
+
+{\noindent}\textbf{Polarization angle}: $\chi ~ [{\rm deg}]$
+
+{\noindent}\textbf{Polarized intensity}: $P ~ [{\rm Jy}]$
+
+{\noindent}\textbf{Polytropic constant}: $K ~ [{\rm dimensionless}]$
+
+{\noindent}\textbf{Polytropic exponent}: $\gamma ~ [{\rm dimensionless}]$
+
+{\noindent}\textbf{Polytropic exponent (adiabatic)}: $\gamma_{\rm ad} ~ [{\rm dimensionless}]$
+
+{\noindent}\textbf{Polytropic index}: $n ~ [{\rm dimensionless}]$
+
+{\noindent}\textbf{Positron}: $e^+ ~ [{\rm particle}]$
+
+{\noindent}\textbf{Potential energy}: $E_\mathrm{pot} ~ [{\rm J}]$
+
+{\noindent}\textbf{Power}: $P ~ [{\rm J\,s^{-1}~{\rm or}~{\rm erg\,s^{-1}}}]$
+
+{\noindent}\textbf{Power spectrum}: $P(k) ~ [{\rm function}]$
+
+{\noindent}\textbf{Precession rate}: $\Omega_p ~ [{\rm rad\,yr^{-1}}]$
+
+{\noindent}\textbf{Pressure}: $P ~ [{\rm P}]$
+
+{\noindent}\textbf{Pressure (radiation)}: $P_{\rm rad} ~ [{\rm P}]$
+
+{\noindent}\textbf{Pressure scale height}: $H_p ~ [{\rm cm}]$
+
+{\noindent}\textbf{Probability}: $P(x;n) ~ [{\rm dimensionless}]$
+
+{\noindent}\textbf{Probability (binomial)}: $P_B(x;n,p) ~ [{\rm dimensionless}]$
+
+{\noindent}\textbf{Probability (Poisson)}: $P_P(x;\mu) ~ [{\rm dimensionless}]$
+
+{\noindent}\textbf{Probability density}: $p ~ [{\rm dimensionless}]$
+
+{\noindent}\textbf{Probability density (Gaussian)}: $p_G ~ [{\rm dimensionless}]$
+
+{\noindent}\textbf{Proper distance}: $d_p ~ [{\rm Mpc}]$
+
+{\noindent}\textbf{Proper motion}: $\mu ~ [{\rm ''\,year^{-1}}]$
+
+{\noindent}\textbf{Proton}: $p ~ [{\rm particle}]$
+
+{\noindent}\textbf{R parameter}: $R_V ~ [{\rm dimensionless}]$
+
+{\noindent}\textbf{Radial period}: $T_r ~ [{\rm yr}]$
+
+{\noindent}\textbf{Radial unit vector}: $\hat{e}_r ~ [{\rm dimensionless}]$
+
+{\noindent}\textbf{Radial velocity}: $v_r ~ [{\rm km\,s^{-1}}]$
+
+{\noindent}\textbf{Radiation density constant}: $a ~ [{\rm erg\,cm^{-3}\,K^{-4}}]$
+
+{\noindent}\textbf{Radiation energy density}: $u ~ [{\rm erg\,cm^{-3}}]$
+
+{\noindent}\textbf{Radiation energy density (specific)}: $u_\nu ~
+[{\rm erg\,cm^{-3}\,Hz^{-1}}]$
+
+{\noindent}\textbf{Radiation pressure acceleration}: $g_{\rm rad} ~ [{\rm m\,s^{-2}}]$
+
+{\noindent}\textbf{Radiative energy transport}: $\frac{\partial T}{\partial r} ~ [{\rm K\,m^{-1}}]$
+
+{\noindent}\textbf{Radius (Einstein ring)}: $r_E ~ [{\rm AU}]$
+
+{\noindent}\textbf{Radius (neutron star)}: $R_{\rm ns} ~ [{\rm m}]$
+
+{\noindent}\textbf{Radius (norm)}: $R\,{\rm or}\,r ~ [{\rm pc}]$
+
+{\noindent}\textbf{Radius (Solar value)}: $R_\odot ~ [{\rm pc}]$
+
+{\noindent}\textbf{Radius (vector)}: $\vec{r} ~ [{\rm pc}]$
+
+{\noindent}\textbf{Radius of curvature}: $R_0 ~ [{\rm Mpc}]$
+
+{\noindent}\textbf{Radiative flux}: $F ~ [{\rm erg\,s^{-1}\,m^{-2}}]$
+
+{\noindent}\textbf{Rate of grain photoelectric heating}: $\Gamma_{\rm PE} ~ [{\rm erg\,s^{-1}}]$
+
+{\noindent}\textbf{Redshift}: $z ~ [{\rm dimensionless}]$
+
+{\noindent}\textbf{Redshift (cosmological)}: $z_\mathrm{cos} ~ [{\rm dimensionless}]$
+
+{\noindent}\textbf{Redshift of last scattering}: $z_\mathrm{ls} ~ [{\rm dimensionless}]$
+
+{\noindent}\textbf{Redshift of matter-$\Lambda$ equality}: $z_{m\Lambda} ~ [{\rm dimensionless}]$
+
+{\noindent}\textbf{Redshift of radiation-matter equality}: $z_{rm} ~ [{\rm dimensionless}]$
+
+{\noindent}\textbf{Redshift of thermal coupling}: $z_t ~ [{\rm dimensionless}]$
+
+{\noindent}\textbf{Reduced Hubble constant}: $h_0 ~ [{\rm km\,s^{-1}\,Mpc}]$
+
+{\noindent}\textbf{Reduced Planck constant}: $\hbar ~ [{\rm m^2\,kg\,s^{-1}}]$
+
+{\noindent}\textbf{Refractive index}: $m(\omega) ~ [{\rm dimensionless}]$
+
+{\noindent}\textbf{Relaxation time}: $t_\mathrm{relax} ~ [{\rm yr}]$
+
+{\noindent}\textbf{Rest mass of electron}: $m_e ~ [{\rm kg}]$
+
+{\noindent}\textbf{Rest mass of neutron}: $m_n ~ [{\rm kg}]$
+
+{\noindent}\textbf{Rest mass of proton}: $m_p ~ [{\rm kg}]$
+
+{\noindent}\textbf{Retarded time}: $\tau ~ [{\rm s}]$
+
+{\noindent}\textbf{Rotational energy}: $E_{\rm rot} ~ [{\rm J}]$
+
+{\noindent}\textbf{Rotational velocity (at Solar position)}: $V_0 ~ [{\rm km\,s^{-1}}]$
+
+{\noindent}\textbf{Scalar spectral index}: $n_s ~ [{\rm dimensionless}]$
+
+{\noindent}\textbf{Scale factor}: $a ~ [{\rm dimensionless}]$
+
+{\noindent}\textbf{Scale height}: $h_z ~ [{\rm pc}]$
+
+{\noindent}\textbf{Scattering rate between hydrogen atoms}: $k_{1-0}^\mathrm{HH} ~ [{\rm s^{-1}}]$
+
+{\noindent}\textbf{Scattering rate between hydrogen atoms and electrons}: $k_{1-0}^{e\mathrm{H}} ~ [{\rm s^{-1}}]$
+
+{\noindent}\textbf{Scattering rate between hydrogen atoms and protons}: $k_{1-0}^{p\mathrm{H}} ~ [{\rm s^{-1}}]$
+
+{\noindent}\textbf{Schwarzschild radius}: $r_S ~ [{\rm pc}]$
+
+{\noindent}\textbf{Screening factor}: $f ~ [{\rm dimensionless}]$
+
+{\noindent}\textbf{Screening factor (pp chain)}: $f_{pp} ~ [{\rm dimensionless}]$
+
+{\noindent}\textbf{Semi-major axis}: $a ~ [{\rm Mpc}]$
+
+{\noindent}\textbf{Siemen}: ${\rm S} ~ [{\rm unit}]$
+
+{\noindent}\textbf{Semi-minor axis}: $b ~ [{\rm Mpc}]$
+
+{\noindent}\textbf{Silicon}: ${\rm Si} ~ [{\rm element}]$
+
+{\noindent}\textbf{Sign of curvature}: $\kappa ~ [{\rm dimensionless}]$
+
+{\noindent}\textbf{Silk mass}: $M_s ~ [{\rm kg}]$
+
+{\noindent}\textbf{Size scale}: $\ell ~ [{\rm pc}]$
+
+{\noindent}\textbf{Slit spacing}: $d ~ [{\rm \mu m}]$
+
+{\noindent}\textbf{Solar radius}: $R_0 ~ [{\rm kpc}]$
+
+{\noindent}\textbf{Solid angle}: $\Omega ~ [{\rm sr}]$
+
+{\noindent}\textbf{Sonic length}: $\ell_s ~ [{\rm pc}]$
+
+{\noindent}\textbf{Sonic mass}: $M_s ~ [{\rm M_\odot}]$
+
+{\noindent}\textbf{Sound speed}: $c_s ~ [{\rm m\,s^{-1}}]$
+
+{\noindent}\textbf{Sound speed (isothermal)}: $c_{s0} ~ [{\rm m\,s^{-1}}]$
+
+{\noindent}\textbf{Spectral index}: $\alpha ~ [{\rm dimensionless}]$
+
+{\noindent}\textbf{Spectral index (IR)}: $\alpha_{\rm IR} ~ [{\rm dimensionless}]$
+
+{\noindent}\textbf{Spherical harmonics}: $Y_{lm}(\theta,\phi) ~ [{\rm dimensionless}]$
+
+{\noindent}\textbf{Spin temperature}: $T_s ~ [{\rm K}]$
+
+{\noindent}\textbf{Specific intensity}: $I_\nu ~ [{\rm erg\,s^{-1}\,cm^{-2}\,Hz^{-1}\,sr^{-1}}]$
+
+{\noindent}\textbf{Speed of light}: $c ~ [{\rm m\,s^{-1}}]$
+
+{\noindent}\textbf{Spin de-excitation rate via collisions for species $i$}: $k_{10}^i ~ [{\rm cm^3s^{-1}}]$
+
+{\noindent}\textbf{Spin temperature}: $T_s ~ [{\rm K}]$
+
+{\noindent}\textbf{Standard deviation (of distribution)}: $s ~ [{\rm function}]$
+
+{\noindent}\textbf{Standard deviation (of parent population)}: $\sigma ~ [{\rm function}]$
+
+{\noindent}\textbf{Str\"omgren radius}: $r_s ~ [{\rm pc}]$
+
+{\noindent}\textbf{Star formation history}: $\psi(z) ~ [{\rm M_\odot\,year^{-1}\,Mpc^{-3}}]$
+
+{\noindent}\textbf{Star formation rate per unit area}: $\Sigma_\mathrm{SFR} ~ [{\rm M_\odot\,year^{-1}\,pc^{-2}}]$
+
+{\noindent}\textbf{Statistical weight}: $g ~ [{\rm dimensionless}]$
+
+{\noindent}\textbf{Stefan-Boltzmann constant}: $\sigma ~ [{\rm W\,m^{-2}\,K^{-4}}]$
+
+{\noindent}\textbf{Steradian}: ${\rm sr} ~ [{\rm unit}]$
+
+{\noindent}\textbf{Stokes I}: $Q ~ [{\rm Jy}]$
+
+{\noindent}\textbf{Stokes Q}: $Q ~ [{\rm Jy}]$
+
+{\noindent}\textbf{Stokes U}: $Q ~ [{\rm Jy}]$
+
+{\noindent}\textbf{Stress energy tensor}: $T_{\alpha\beta} ~ [{\rm unit}]$
+
+{\noindent}\textbf{Sunyaev-Zeldovich temperature fluctuation}: $\Delta T_\mathrm{SZ} ~ [{\rm K}]$
+
+{\noindent}\textbf{Sum of neutrino masses}: $\Sigma m_\nu ~ [{\rm eV}]$
+
+{\noindent}\textbf{Surface brightness}: $\mu ~ [{\rm mag\,arcsec^{-2}}]$
+
+{\noindent}\textbf{Surface brightness (central)}: $\mu_0 ~ [{\rm mag\,arcsec^{-2}}]$
+
+{\noindent}\textbf{Surface brightness at effective radius $R_e$}: $\mu_e ~ [{\rm mag\,arcsec^{-2}}]$
+
+{\noindent}\textbf{Synchrotron beam angle}: $\theta ~ [{\rm rad}]$
+
+{\noindent}\textbf{T Tauri mass}: $M_{\rm TT} ~ [{\rm M_\odot}]$
+
+{\noindent}\textbf{T Tauri radius}: $R_{\rm TT} ~ [{\rm R_\odot}]$
+
+{\noindent}\textbf{T Tauri temperature}: $T_{\rm TT} ~ [{\rm K}]$
+
+{\noindent}\textbf{Tangential velocity}: $v_t ~ [{\rm km\,s^{-1}}]$
+
+{\noindent}\textbf{Temperature}: $T ~ [{\rm K}]$
+
+{\noindent}\textbf{Temperature (bolometric)}: $T_{\rm bol} ~ [{\rm K}]$
+
+{\noindent}\textbf{Temperature gradient}: $\nabla ~ [{\rm K\,P^{-1}}]$
+
+{\noindent}\textbf{Temperature gradient (actual)}: $\nabla\,{\rm or}\,\nabla_{\rm act} ~ [{\rm K\,P^{-1}}]$
+
+{\noindent}\textbf{Temperature gradient (adiabatic)}: $\nabla_{\rm ad} ~ [{\rm K\,P^{-1}}]$
+
+{\noindent}\textbf{Temperature gradient (radiative)}: $\nabla_{\rm rad} ~ [{\rm K\,P^{-1}}]$
+
+{\noindent}\textbf{Temperature of the CMB}: $T_{\rm CMB} ~ [{\rm K}]$
+
+{\noindent}\textbf{Temperature of recombination}: $T_{\rm rec} ~ [{\rm K}]$
+
+{\noindent}\textbf{Temperature of the Sun}: $T_\odot ~ [{\rm K}]$
+
+{\noindent}\textbf{Thermal energy}: $E_\mathrm{th} ~ [{\rm J}]$
+
+{\noindent}\textbf{Thermal energy per unit mass}: $e_\mathrm{th} ~ [{\rm J\,kg^{-1}}]$
+
+{\noindent}\textbf{Thomson cross section}: $\sigma_T ~ [{\rm m^2}]$
+
+{\noindent}\textbf{Time}: $t ~ [{\rm s\,or\,yr}]$
+
+{\noindent}\textbf{Time in units of the initial mass doubling time}: $\tau ~ [{\rm dimensionless}]$
+
+{\noindent}\textbf{Transfer function}: $T(k) ~ [{\rm dimensionless}]$
+
+{\noindent}\textbf{Tritium}: $T ~ [{\rm element}]$
+
+{\noindent}\textbf{Two-point correlation function:} $\xi(x) ~ [{\rm dimensionless}]$
+
+{\noindent}\textbf{Variance (of distribution)}: $s^2 ~ [{\rm function}]$
+
+{\noindent}\textbf{Variance (of parent population)}: $\sigma^2 ~ [{\rm function}]$
+
+{\noindent}\textbf{Velocity}: $v ~ [{\rm m\,s^{-1}}]$
+
+{\noindent}\textbf{Velocity FWHM}: $(\Delta v)_{\rm FWHM} ~ [{\rm m\,s^{-1}}]$
+
+{\noindent}\textbf{Velocity (luminous matter)}: $v_{\rm lum} ~ [{\rm m\,s^{-1}}]$
+
+{\noindent}\textbf{Velocity (circular)}: $v_c ~ [{\rm m\,s^{-1}}]$
+
+{\noindent}\textbf{Velocity (radial)}: $v_r ~ [{\rm m\,s^{-1}}]$
+
+{\noindent}\textbf{Velocity (rotational)}: $v_\mathrm{rot} ~ [{\rm m\,s^{-1}}]$
+
+{\noindent}\textbf{Velocity (tangential)}: $v_t ~ [{\rm m\,s^{-1}}]$
+
+{\noindent}\textbf{Velocity dispersion}: $\sigma_v ~ [{\rm m\,s^{-1}}]$
+
+{\noindent}\textbf{Velocity dispersion on size scale $\ell$}: $\sigma_v(\ell) ~ [{\rm m\,s^{-1}}]$
+
+{\noindent}\textbf{Virial parameter}: $\alpha_\mathrm{vir} ~ [{\rm dimensionless}]$
+
+{\noindent}\textbf{Virial temperature}: $T_\mathrm{vir} ~
+[{\rm K}]$
+
+{\noindent}\textbf{Visibility amplitude}: $A ~ [{\rm dimensionless}]$
+
+{\noindent}\textbf{Visibility phase}: $\phi ~ [{\rm rad}]$
+
+{\noindent}\textbf{Visual extinction}: $A_V ~ [{\rm mag}]$
+
+{\noindent}\textbf{Voigt profile}: $\phi_\nu^{\rm Voigt}  ~ [{\rm erg\,s^{-1}\,cm^{-2}\,sr^{-1}}]$
+
+{\noindent}\textbf{Volt}: $V ~ [{\rm unit}]$
+
+{\noindent}\textbf{Voltage}: $V ~ [{\rm V}]$
+
+{\noindent}\textbf{Volume}: $V ~ [{\rm m^3}]$
+
+{\noindent}\textbf{Volume (specific)}: $V ~ [{\rm g^{-1}\,cm^3}]$
+
+{\noindent}\textbf{Wavelength}: $\lambda ~ [{\rm m}]$
+
+{\noindent}\textbf{Wavelength of Balmer jump}: $\lambda_{\rm BJ} ~ [{\rm m}]$
+
+{\noindent}\textbf{Wavelength of Balmer jump (blueward)}: $\lambda_{\rm BJ,blue} ~ [{\rm m}]$
+
+{\noindent}\textbf{Wavelength of Balmer jump (redward)}: $\lambda_{\rm BJ,red} ~ [{\rm m}]$
+
+{\noindent}\textbf{Wavenumber (comoving)}: $k ~ [{\rm m^{-1}}]$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                                      %
+%                                                      %
+%                   USEFUL VALUES                      %
+%                                                      %
+%                                                      %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newpage
+\subsection{Useful Values}
+
+{\noindent}\textbf{Age of the Earth}: $t_\oplus = 4.5\,[{\rm Gyr}]$
+
+{\noindent}\textbf{Age of the Solar System}: $t_\mathrm{SS} = 4.6\,[{\rm Gyr}]$
+
+{\noindent}\textbf{Age of the Universe}: $t_\mathrm{universe} = 13.7\,[{\rm Gyr}]$
+
+{\noindent}\textbf{Angstr\"{o}m}: \AA$ = 10^{-10}\,[{\rm m}]$
+
+{\noindent}\textbf{Astronomical Unit}: $1$ AU = $1.5\times10^{11}\,[{\rm m}]$
+
+{\noindent}\textbf{Atomic mass unit}: $1\,{\rm amu} = 931.49\,{\rm MeV}$
+
+{\noindent}\textbf{Avogadro's number}: $N_A=6.02\times10^{23} ~ [{\rm mol^{-1}}]$
+
+{\noindent}\textbf{Binding energy of deuterium}: $E_\mathrm{D} = 1.1 ~ [{\rm MeV}]$
+
+{\noindent}\textbf{Binding energy of helium}: $E_\mathrm{He} = 7 ~ [{\rm MeV}]$
+
+{\noindent}\textbf{Binding energy of hydrogen}: $E_\mathrm{He} 13.7 ~ [{\rm MeV}]$
+
+{\noindent}\textbf{Chandrasekhar mass}: $M_C = 1.4 ~ [{\rm M_\odot}]$
+
+{\noindent}\textbf{CMB peak photon wavelength}: $\lambda_\mathrm{CMB} = 2\,[{\rm mm}]$
+
+{\noindent}\textbf{CMB temperature}: $T_\mathrm{CMB} = 2.725\,[{\rm K}]$
+
+{\noindent}\textbf{CMB temperature fluctuations}: $\Delta T/T\approx10^{-5} ~ [{\rm dimensionless}]$
+
+{\noindent}\textbf{CNB temperature}: $T_\mathrm{CNB} = 1.9\,[{\rm K}]$
+
+{\noindent}\textbf{Cosmological constant}: $\Lambda=1.11\times10^{-52} ~ [{\rm m^{-2}}]$
+
+{\noindent}\textbf{Critical density (current)}: $\rho_{c,0}\approx10^{-26}\,[{\rm kg\,m^{-3}}]$
+
+{\noindent}\textbf{Density (atomic nucleus)}: $\rho_{\rm nuc} \approx 2.3\times10^{16}\,{\rm kg\,m^{-3}}$
+
+{\noindent}\textbf{Density (dark energy)}: $\rho_\Lambda = 10^{-27} ~ [{\rm kg\,m^{-3}}]$
+
+{\noindent}\textbf{Density (Solar value)}: $\bar{\rho}_\odot = 1.4\,[{\rm g\,cm^{-3}}]$
+
+{\noindent}\textbf{Density parameter (baryons)}: $\Omega_b \approx 0.044 ~ [{\rm dimensionless}]$
+
+{\noindent}\textbf{Density parameter (CDM)}: $\Omega_c \approx 0.23 ~ [{\rm dimensionless}]$
+
+{\noindent}\textbf{Density parameter (CMB)}: $\Omega_\mathrm{CMB} \approx 5\times10^{-5} ~ [{\rm dimensionless}]$
+
+{\noindent}\textbf{Density parameter (curvature)}: $\Omega_\kappa \approx 0.0 ~ [{\rm dimensionless}]$
+
+{\noindent}\textbf{Density parameter (dark energy)}: $\Omega_\Lambda \approx 0.73 ~ [{\rm dimensionless}]$
+
+{\noindent}\textbf{Density parameter (matter)}: $\Omega_m \approx 0.27 ~ [{\rm dimensionless}]$
+
+{\noindent}\textbf{Density parameter (neutrinos)}: $\Omega_\nu < 0.12 ~ [{\rm dimensionless}]$
+
+{\noindent}\textbf{Density parameter (radiation)}: $\Omega_r \approx 5\times10^{-5} ~ [{\rm dimensionless}]$
+
+{\noindent}\textbf{Dipole}: $\ell=1 ~ [{\rm dimensionless}]$
+
+{\noindent}\textbf{Electron radius (classical)}: $r_{e,0}=2.82\times10^{-13} ~ [{\rm cm}]$
+
+{\noindent}\textbf{Electronvolt in Joules}: $1\,{\rm eV} = 1.6\times10^{-19}\,{\rm J}$
+
+{\noindent}\textbf{Electroweak age}: $t_\mathrm{ew} \sim 10^{-12}\,[{\rm s}]$
+
+{\noindent}\textbf{Electroweak energy}: $E_\mathrm{ew} \sim 1\,[{\rm TeV}]$
+
+{\noindent}\textbf{Electroweak temperature}: $T_\mathrm{ew} \sim 10^{16}\,[{\rm K}]$
+
+{\noindent}\textbf{Energy of CMB photons}: $E_{\gamma,\mathrm{CMB}} \sim 6\times10^{-4}\,[{\rm eV}]$
+
+{\noindent}\textbf{Energy of nuclei fission}: $E_\mathrm{fission} \sim 1\,[{\rm MeV}]$
+
+{\noindent}\textbf{Energy of nuclei ionization}: $E_\mathrm{ion} \sim 10\,[{\rm eV}]$
+
+{\noindent}\textbf{GUT age}: $t_\mathrm{GUT} \sim 10^{-36}\,[{\rm s}]$
+
+{\noindent}\textbf{GUT energy}: $E_\mathrm{GUT} \sim 10^{12}-10^{13}\,[{\rm TeV}]$
+
+{\noindent}\textbf{GUT temperature}: $T_\mathrm{GUT} \sim 10^{28}\,[{\rm K}]$
+
+{\noindent}\textbf{Helium mass fraction}: $Y = 0.25 ~ [{\rm dimensionless}]$
+
+{\noindent}\textbf{Hubble constant}: $H_0 = 70\,[{\rm km\,s^{-1}\,Mpc^{-1}}]$
+
+{\noindent}\textbf{Hubble constant (original)}: $H_0 \approx 500\,[{\rm km\,s^{-1}\,Mpc^{-1}}]$
+
+{\noindent}\textbf{Hubble distance}: $d_H \sim 0.2\,[{\rm Mpc}]$
+
+{\noindent}\textbf{Hubble time}: $t_H \sim 14\,[{\rm Gyr}]$
+
+{\noindent}\textbf{IMF normalization}: $\int\limits_{m_L}^{m_U} m\xi(m)\,\mathrm{d}m = 1\,{\rm M}_\odot$
+
+{\noindent}\textbf{Inflationary period}: $t_\mathrm{inflate} = 10^{-35}\,[{\rm s}]$
+
+{\noindent}\textbf{Ionization energy of atomic hydrogen}: $E_\mathrm{ion}^\mathrm{H} = 13.6\,[{\rm eV}]$
+
+{\noindent}\textbf{Ionization energy of atomic helium}: $E_\mathrm{ion}^\mathrm{He} = 24.6\,[{\rm eV}]$
+
+{\noindent}\textbf{Ionization energy of molecular hydrogen}: $E_\mathrm{ion}^\mathrm{H_2} = 11.26\,[{\rm eV}]$
+
+{\noindent}\textbf{Large cosmological scale}: $\sim 100\,[{\rm Mpc}]$
+
+{\noindent}\textbf{Legendre Polynomials}: $P_l$
+
+{\noindent}\textbf{Line profile normalization}: $\int\limits_0^\infty \phi(\nu)=1 ~ [{\rm erg\,s^{-1}\,cm^{-2}\,sr^{-1}}]$
+
+{\noindent}\textbf{Luminosity of the Sun}: $L_\odot=3.8\times10^6 ~ [{\rm W}]$
+
+{\noindent}\textbf{Luminosity of type Ia SN (at peak)}: $L_\mathrm{1a}=4\times10^9 ~ [{\rm L_\odot}]$
+
+{\noindent}\textbf{Lyman-alpha rest wavelength}: $\lambda_\alpha = 1216$\,[\AA]
+
+{\noindent}\textbf{Magnitude (absolute) of the Sun}: $M = 26.8 ~ [{\rm dimensionless}]$
+
+{\noindent}\textbf{Magnitude (apparent) of the Sun}: $m = 4.74 ~ [{\rm dimensionless}]$
+
+{\noindent}\textbf{Mass of an electron}: $m_e = 9.109\times10^{-31}\,[{\rm kg}]$
+
+{\noindent}\textbf{Mass of atomic hydrogen}: $m_{\rm H} = 1.67\times10^{-27}\,[{\rm kg}]$
+
+{\noindent}\textbf{Mass (neutron)}: $m_n = 1.67\times10^{-27}\,[{\rm kg}]$
+
+{\noindent}\textbf{Mass (neutron star)}: $M_{\rm ns} = 1.4\,[{\rm M_\odot}]$
+
+{\noindent}\textbf{Mass (proton)}: $m_p = 1.67\times10^{-27}\,[{\rm kg}]$
+
+{\noindent}\textbf{Mean free path (Solar value)}: $\ell_{{\rm mfp},\odot} = 2\,[{\rm cm}]$
+
+{\noindent}\textbf{Megaelectronvolt}: ${\rm MeV} = 10^{10.065}\,[{\rm K}]$
+
+{\noindent}\textbf{Metallicity of the Sun}: $Z\approx0.02 ~ [{\rm dimensionless}]$
+
+{\noindent}\textbf{Milky Way luminosity}: ${\rm L_{MWG}} = 3.6\times10^{10}\,[{\rm L}_\odot]$
+
+{\noindent}\textbf{Monopole}: $\ell=0 ~ [{\rm dimensionless}]$
+
+{\noindent}\textbf{Neutron half life}: $t_n\sim\,890\,[{\rm sec}]\,{\rm or}\,\sim\,15\,[{\rm min}]$
+
+{\noindent}\textbf{Neutron-proton freezeout}: $\frac{n_n}{n_p} \simeq \frac{1}{7}\,[{\rm dimensionless}]$
+
+{\noindent}\textbf{Neutron-proton rest mass-energy difference}: $(m_n-m_p)c^2 = 1.3\,[{\rm MeV}]$
+
+{\noindent}\textbf{Number density of baryons}: $n_{b,0} = 0.22\,[{\rm m^{-3}}]$
+
+{\noindent}\textbf{Number density of CMB photons}: $n_\gamma= 4.11\times10^8\,[{\rm m^{-3}}]$
+
+{\noindent}\textbf{Number density ratio of baryons to CMB photons}: $\eta \equiv \frac{n_{b,0}}{n_\gamma} = 5\times10^{-10}\,[{\rm dimensionless}]$
+
+{\noindent}\textbf{Oort constant A}: $A = (14.8\pm0.8) ~ [{\rm km\,s^{-1}\,kpc^{-1}}]$
+
+{\noindent}\textbf{Oort constant B}: $B = (-12.4\pm0.6) ~ [{\rm km\,s^{-1}\,kpc^{-1}}]$
+
+{\noindent}\textbf{Parsec}: $1\,{\rm pc} = 206265\,{\rm AU} = 3.1\times10^{16}\,{\rm m}$
+
+{\noindent}\textbf{Permittivity (vacuum)}: $\epsilon_0 = 8.85\times10^{-12} ~ [{\rm F\,m^{-1}}]$
+
+{\noindent}\textbf{Photoionization energy of hydrogen}: $E^\mathrm{H}_\mathrm{ion} = 13.6\,[{\rm eV}]$
+
+{\noindent}\textbf{Planck energy}: $E_P = 10^{16}\,[{\rm TeV}]$
+
+{\noindent}\textbf{Planck length}: $\ell_P = 1.6\times10^{-35}\,[{\rm m}]$
+
+{\noindent}\textbf{Planck mass}: $M_P = 2.2\times10^{-8}\,[{\rm kg}]$
+
+{\noindent}\textbf{Planck temperature}: $T_P = 1.4\times10^{32}\,[{\rm K}]$
+
+{\noindent}\textbf{Planck time}: $t_P = 5.4\times10^{-44}\,[{\rm s}]$
+
+{\noindent}\textbf{Proper surface area}: $A_p(t_0) ~ [{\rm Mpc^2}]$
+
+{\noindent}\textbf{Radiation density constant}: $a=7.57\times10^{-15} ~ [{\rm erg\,cm^{-3}\,K^{-4}}]$
+
+{\noindent}\textbf{Radius (neutron star)}: $R_{\rm ns} = 10-15\,[{\rm km}]$
+
+{\noindent}\textbf{Recombination age of Universe}: $t_\mathrm{rec} \sim 380,000\,[{\rm yr}]$
+
+{\noindent}\textbf{Recombination redshift}: $z_\mathrm{rec}\sim1,100\,[{\rm dimensionless}]$
+
+{\noindent}\textbf{Reduced Hubble constant}: $\dfrac{H_0}{100} = 0.70\,[{\rm km\,s^{-1}\,Mpc^{-1}}]$
+
+{\noindent}\textbf{Redshift of radiation-matter equality}: $z_{rm} \approx 5399\,[{\rm dimensionless}]$
+
+{\noindent}\textbf{Redshift of matter-$\Lambda$ equality}: $z_{m\Lambda}
+\approx0.39\,[{\rm dimensionless}]$
+
+{\noindent}\textbf{Rest energy of an deuterium}: $m_\mathrm{D}c^2 = 2.225\,[{\rm MeV}]$
+
+{\noindent}\textbf{Rest energy of an electron}: $m_ec^2 = 0.511\,[{\rm MeV}]$
+
+{\noindent}\textbf{Rest energy of a neutron}: $m_nc^2 = 939.6\,[{\rm MeV}]$
+
+{\noindent}\textbf{Rest energy of a proton}: $m_pc^2 = 938.3\,[{\rm MeV}]$
+
+{\noindent}\textbf{Rotational velocity (at Solar position)}: $V_0 = 220 ~ [{\rm km\,s^{-1}}]$
+
+{\noindent}\textbf{Scalar spectral index}: $n_s\approx1 ~ [{\rm dimensionless}]$
+
+{\noindent}\textbf{Scale factor (current)}: $a_0=a(t_0)\equiv1\,[{\rm dimensionless}]$
+
+{\noindent}\textbf{Scalefactor of radiation-matter equality}: $a_{rm} \approx 2.8\times10^{-4}\,[{\rm dimensionless}]$
+
+{\noindent}\textbf{Scalefactor of matter-$\Lambda$ equality}: $a_{m\Lambda}
+\approx0.75\,[{\rm dimensionless}]$
+
+{\noindent}\textbf{Seconds in a year}: $1\,{\rm yr} = 3.2\times10^7\,[{\rm s}]$
+
+{\noindent}\textbf{Seconds in a gigayear}: $1\,{\rm Gyr} = 3.2\times10^{16}\,[{\rm s}]$
+
+{\noindent}\textbf{Sign of curvature (closed Universe)}: $\kappa>0 ~ [{\rm dimensionless}]$
+
+{\noindent}\textbf{Sign of curvature (flat Universe)}: $\kappa=0 ~ [{\rm dimensionless}]$
+
+{\noindent}\textbf{Sign of curvature (open Universe)}: $\kappa<0 ~ [{\rm dimensionless}]$
+
+{\noindent}\textbf{Solar absolute magnitude}: ${\rm M}_\odot = 4.74\,[{\rm mag}]$
+
+{\noindent}\textbf{Solar apparent magnitude}: ${\rm m}_\odot = 26.8\,[{\rm mag}]$
+
+{\noindent}\textbf{Solar flux}: ${\rm F}_\odot = 1367\,[{\rm erg\,s^{-1}\,m^{-2}}]$
+
+{\noindent}\textbf{Solar luminosity}: ${\rm L}_\odot = 3.8\times10^{26}\,[{\rm W}]$
+
+{\noindent}\textbf{Solar mass}: ${\rm M}_\odot = 2.0\times10^{30}\,[{\rm kg}]$
+
+{\noindent}\textbf{Solar mean photon energy}: $\langle E_\odot \rangle = 1.3\,[{\rm eV}]$
+
+{\noindent}\textbf{Solar radius}: $R_0 = 8.5 ~ [{\rm kpc}]$
+
+{\noindent}\textbf{Solar temperature}: $T_\odot = 5800\,[{\rm K}]$
+
+{\noindent}\textbf{Speed of light}: $c=2.998\times10^8\,[{\rm m\,s^{-1}}]$
+
+{\noindent}\textbf{Stefan-Boltzmann constant}: $\sigma=5.67\times10^{-8} ~ [{\rm W\,m^{-2}\,K^{-4}}]$
+
+{\noindent}\textbf{Supernova peak luminosity}: $L_\mathrm{SN,max} = 4\times10^9\,{\rm L_\odot}\,[{\rm W}]$
+
+{\noindent}\textbf{T Tauri mass}: $M_{\rm TT}\sim0.5 ~ [{\rm M_\odot}]$
+
+{\noindent}\textbf{T Tauri radius}: $R_{\rm TT}\sim2.5 ~ [{\rm R_\odot}]$
+
+{\noindent}\textbf{T Tauri temperature}: $T_{\rm TT}\sim4000 ~ [{\rm K}]$
+
+{\noindent}\textbf{Temperature at CMB decoupling}: $k_BT_\mathrm{CMB,dec} = 1/4\,[{\rm eV}]$
+
+{\noindent}\textbf{Thomson cross section}: $\sigma_T=0.665\times10^{-24} ~ [{\rm cm^2}]$
+
+{\noindent}\textbf{Time of radiation-matter equality}: $t_{rm} \approx 4.7\times10^{4}\,[{\rm yr}]$
+
+{\noindent}\textbf{Time of matter-$\Lambda$ equality}: $t_{m\Lambda}
+\approx9.8\,[{\rm Gyr}]$
+
+{\noindent}\textbf{Vacuum energy density}: $\rho_\mathrm{vac} = 10^{133} ~ [{\rm eV\,cm^{-3}}]$
+
+{\noindent}\textbf{21 cm energy}: $E_{21\,\mathrm{cm}} = 5.9\times10^{-6} ~ [{\rm eV}]$
+
+{\noindent}\textbf{21 cm rest frequency}: $\nu_{21\,\mathrm{cm}} = 1420 ~ [{\rm MHz}]$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                                      %
+%                                                      %
+%                    EQUATIONS                         %
+%                                                      %
+%                                                      %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newpage
+\subsection{Equations}
+
+{\noindent}\textbf{Absolute magnitude}:
+\begin{align*}
+    M &\equiv -2.5\log\left(\frac{L}{L_0}\right) ~ [{\rm mag}] \\
+    M &\equiv -2.5\log\left(\frac{L}{78.7\,{\rm L_\odot}}\right) ~ [{\rm mag}]
+\end{align*}
+
+{\noindent}\textbf{Absorption coefficient}: $\alpha_\nu ~ [{\rm cm^{-1}}]$
+\begin{align*}
+    \alpha_\nu = n\sigma_\nu = \rho\kappa_\nu ~ [{\rm cm^{-1}}]
+\end{align*}
+
+{\noindent}\textbf{Absorption cross section (intrinsic)}:
+\begin{align*}
+    \sigma_\nu^{\rm intr} = \frac{\pi e^2}{m_ec^2}f_{\ell u} \phi_\nu^{\rm intr} ~ [{\rm cm^2}], ~~~ \int\phi_\nu^{\rm intr}{\rm d}\nu =1
+\end{align*}
+
+{\noindent}\textbf{Absorption rate}:
+\begin{align*}
+    \left(\frac{{\rm d}n_u}{{\rm d}t}\right)_{\ell\rightarrow u} &= n_\ell \int \sigma_{\ell u}(\nu)c \frac{u_\nu}{h\nu}{\rm d}\nu \approx n_\ell u_\nu \frac{c}{h\nu} \int \sigma_{\ell u}(\nu){\rm d}\nu ~ [{\rm s^{-1}}] \\
+     B_{\ell u} &= \frac{c}{h\nu} \int \sigma_{\ell u}(\nu){\rm d}\nu ~ [{\rm s^{-1}}]
+\end{align*}
+
+{\noindent}\textbf{Adiabatic gas law}:
+\begin{align*}
+    PV^\gamma = K ~ [{\rm P\,m^3}]
+\end{align*}
+
+{\noindent}\textbf{Albedo}:
+\begin{align*}
+    \omega \equiv \frac{C_{\rm sca}(\lambda)}{C_{\rm abs}(\lambda)+C_{\rm sca}} = \frac{C_{\rm sca}(\lambda)}{C_{\rm ext}(\lambda)} ~ [{\rm dimensionless}]
+\end{align*}
+
+{\noindent}\textbf{Angular diameter distance}:
+\begin{align*}
+    D_A = D(1+z)^{-1} ~ [{\rm pc}]
+\end{align*}
+
+{\noindent}\textbf{Angular momentum per unit mass}:
+\begin{align*}
+    \vec{L}&\equiv\vec{r}\times\frac{{\rm d}\vec{r}}{{\rm d}t} ~ [{\rm m^2\,s^{-1}\,kg^{-1}}] \\
+    \vec{L}&\equiv r^2\dot{\phi} ~ [{\rm m^2\,s^{-1}\,kg^{-1}}]
+\end{align*}
+
+{\noindent}\textbf{Angular size (Einstein ring)}:
+\begin{align*}
+    \theta_E &= \frac{r_E}{d_L} ~ [{\rm rad}]
+    \theta_E &= \sqrt{\frac{4GM}{c^2} \left(\frac{d_S-d_L}{d_Sd_L}\right)} ~ [{\rm rad}]
+\end{align*}
+
+{\noindent}\textbf{Angular velocity}:
+\begin{align*}
+    \Omega \equiv \frac{V(R)}{R} ~ [{\rm km\,s^{-1}\,kpc^{-1}}]
+\end{align*}
+
+{\noindent}\textbf{Apocenter}:
+\begin{align*}
+    r_2 = a(1+e) ~ [{\rm AU}]
+\end{align*}
+
+{\noindent}\textbf{Apparent magnitude}:
+\begin{align*}
+     m &\equiv -2.5\log\left(\frac{F}{F_0}\right) ~ [{\rm mag}] \\
+     m &\equiv -2.5\log\left(\frac{F}{2.53\times10^{-8}\,{\rm W\,m^{-2}}}\right) ~ [{\rm mag}]
+\end{align*}
+
+{\noindent}\textbf{Apparent-absolute magnitude relation}:
+\begin{align*}
+    M &= m -5\log_{10}\left(\frac{d_L}{10\,{\rm pc}}\right) ~ [{\rm mag}] \\
+      &= m -5\log_{10}\left(\frac{d_L}{1\,{\rm Mpc}}\right)-25 ~ [{\rm mag}]
+\end{align*}
+
+{\noindent}\textbf{Azimuthal angle (change)}:
+\begin{align*}
+    \Delta\psi = 2L\int\limits_{r_1}^{r_2} \frac{{\rm d}r}{r^2\sqrt{2[E-\Phi(r)]-\dfrac{L^2}{r^2}}} ~ [{\rm rad}]
+\end{align*}
+
+{\noindent}\textbf{Azimuthal period}:
+\begin{align*}
+    T_\psi = \frac{2\pi}{\lvert\Delta\phi\rvert}T_r ~ [{\rm yr}]
+\end{align*}
+
+{\noindent}\textbf{$\mathbf{\beta}$-decay}:
+\begin{align*}
+    n \rightarrow\,p^+ + e^- + \bar{\nu}_e
+\end{align*}
+
+{\noindent}\textbf{Balmer jump}:
+\begin{align*}
+    {\rm BJ}\equiv I_\lambda(\lambda_{\rm BJ,blue}) - I_\lambda(\lambda_{\rm BJ,red}) ~ [{\rm erg\,s^{-1}\,cm^{-2}\,Hz^{-1}\,sr^{-1}}]
+\end{align*}
+
+{\noindent}\textbf{Baryon fraction}:
+\begin{align*}
+    f_b \equiv \frac{\Omega_b}{\Omega_m} ~ [{\rm dimensionless}]
+\end{align*}
+
+{\noindent}\textbf{Binding energy}:
+\begin{align*}
+    E_B = [(A-Z)m_n+Zm_p-M_{\rm nuc}]c^2  ~ [{\rm MeV}]
+\end{align*}
+
+{\noindent}\textbf{Binding fraction}: see \textit{Binding energy per nucleon}
+
+{\noindent}\textbf{Binding energy per nucleon}:
+\begin{align*}
+    f = \frac{E_B}{A} ~ [{\rm MeV}]
+\end{align*}
+
+{\noindent}\textbf{Binomial theorem}:
+\begin{align*}
+    (p+q)^n = \sum _{x=0}^n \left[ \binom{n}{x}p^xq^{n-x} \right] ~ [{\rm dimensionless}]
+\end{align*}
+
+{\noindent}\textbf{Black hole mass-luminosity relation}:
+\begin{align*}
+    M_\bullet = 1.7\times10^9\left(\frac{L_\mathrm{V}}{10^{11}\,{\rm L_{V_\odot}}}\right)^{1.11} ~ [{\rm M_\odot}]
+\end{align*}
+
+{\noindent}\textbf{Black hole mass-bulge relation}:
+\begin{align*}
+    M_\bullet &= 2.9\times10^8\left(\frac{M_\mathrm{bulge}}{10^11\,{\rm M_\odot}}\right)^{1.05} ~ [{\rm M_\odot}] \\
+    M_\bullet &\approx 3\times10^{-3}M_\mathrm{bulge}
+\end{align*}
+
+{\noindent}\textbf{Black hole mass-velocity dispersion relation}:
+\begin{align*}
+    M_\bullet = 2.1\times 10^8\left(\frac{\sigma_v}{200\,{\rm km\,s^{-1}}}\right)^{5.64} ~ [{\rm M_\odot}]
+\end{align*}
+
+{\noindent}\textbf{Black hole radius of influence}:
+\begin{align*}
+    r_\mathrm{BH} = \frac{GM_\bullet}{\sigma_v^2} \sim 0.4\left(\frac{M_\bullet}{10^6\,{\rm M_\odot}}\right)\left(\frac{\sigma_v}{100\,{\rm km\,s^{-1}}}\right)^{-2} ~ [{\rm pc}]
+\end{align*}
+
+{\noindent}\textbf{Black hole radius of influence (angular)}:
+\begin{align*}
+    \theta_\mathrm{BH} = \frac{r_\mathrm{BH}}{d} \sim 0.1\left(\frac{M_\bullet}{10^6\,{\rm M_\odot}}\right) \left(\frac{\sigma_v}{100\,{\rm km\,s^{-1}}}\right)^{-2} \left(\frac{d}{1\,{\rm Mpc}}\right)^{-1} ~ [{\rm arcsec}]
+\end{align*}
+
+{\noindent}\textbf{Blackbody function}:
+\begin{align*}
+    B_\nu(T) = \frac{2h\nu^2}{c^2} \frac{1}{\exp(h\nu/k_BT) - 1} ~ [{\rm erg\,s^{-1}\,cm^{-2}\,Hz^{-1}\,sr^{-1}}]
+\end{align*}
+
+{\noindent}\textbf{Blackbody mean photon energy}:
+\begin{align*}
+    \langle E_\mathrm{bb} \rangle = 2.7\,k_BT  ~ [{\rm eV}]
+\end{align*}
+
+{\noindent}\textbf{Blackbody peak photon energy}:
+\begin{align*}
+    E_\mathrm{bb_{peak}} = 2.82\,k_BT ~ [{\rm eV}]
+\end{align*}
+
+{\noindent}\textbf{Bohr magneton}:
+\begin{align*}
+    \mu_B \equiv \frac{e\hbar}{2m_ec} ~ [{\rm erg\,G^{-1}}]
+\end{align*}
+
+{\noindent}\textbf{Boltzmann factor}:
+\begin{align*}
+    \frac{n_i}{n_j} = \mathrm{e}^{-\Delta mc^2/k_BT} ~ [{\rm dimensionless}]
+\end{align*}
+
+{\noindent}\textbf{Broadening parameter}:
+\begin{align*}
+    b \equiv \sqrt{2}\sigma_v ~ [{\rm km\,s^{-1}}]
+\end{align*}
+
+{\noindent}\textbf{Carbon burning}:
+\begin{equation*}
+^{12}_6{\rm C} + ^{12}_6{\rm C} \rightarrow 
+\begin{cases}
+    {\rm ^{16}_8O + 2^4_2He} \\
+    {\rm ^{20}_{10}Ne + ^4_2He} \\
+    {\rm ^{23}_{11}Na + p^+} \\
+    {\rm ^{23}_{12}Mg + n} \\
+    {\rm ^{24}_{12}Mg + \gamma}
+\end{cases}
+\end{equation*}
+
+{\noindent}\textbf{Carbon-oxygen burning}:
+\begin{align*}
+    {\rm ^{12}_6C + ^4_2He} &\rightarrow {\rm ^{16}_8O + \gamma} \\
+    {\rm {16}_8O + ^4_2He} &\rightarrow {\rm ^{20}_{10}Ne + \gamma}
+\end{align*}
+
+{\noindent}\textbf{Central temperature (collapsing core)}:
+\begin{align*}
+    T_c = T_0 \left(\frac{\rho_c}{\rho_{\rm ad}}\right) ^{\gamma-1} ~ [{\rm K}]
+\end{align*}
+
+{\noindent}\textbf{Characteristic frequency (synchrotron)}:
+\begin{align*}
+    \nu_c = \frac{3}{4\pi}\frac{q}{mc}\gamma^2(B\sin\theta) = 6.26\times10^3 \left(\frac{E}{{\rm erg}}\right)^2 \left(\frac{B\sin\theta}{\mu{\rm G}}\right) ~ [{\rm Hz}]
+\end{align*}
+
+{\noindent}\textbf{CMB temperature fluctuations}:
+\begin{align*}
+    \frac{\delta T}{T}(\theta,\phi) = \sum\limits_{\ell=0}^{\infty}\sum\limits_{m=-1}^{\ell} a_{\ell m}Y_{\ell m}(\theta,\phi) ~ [{\rm dimensionless}]
+\end{align*}
+
+{\noindent}\textbf{CNO-1}:
+\begin{align*}
+    {\rm ^{12}_6C + ^1_1H} &\rightarrow {\rm ^{13}_7N + \gamma} \\
+    {\rm ^{13}_7N} &\rightarrow {\rm ^{13}_6C + e^+ + \nu_e} \\
+    {\rm ^{13}_6C + ^1_1H} &\rightarrow {\rm ^{14}_7N + \gamma} \\
+    {\rm ^{14}_7N + ^1_1H} &\rightarrow {\rm ^{15}_8O + \gamma} \\
+    {\rm ^{15}_8O} &\rightarrow {\rm ^{15}_7N + e^+ + \nu_e} \\
+    {\rm ^{15}_7N + ^1_1H} &\rightarrow {\rm ^{12}_6C + ^4_2He}
+\end{align*}
+
+{\noindent}\textbf{CNO-1I}:
+\begin{align*}
+    {\rm ^{15}_7N + ^1_1H} &\rightarrow {\rm ^{16}_8O + \gamma} \\
+    {\rm ^{16}_8O + ^1_1H} &\rightarrow {\rm ^{17}_9F +\gamma} \\
+    {\rm ^{17}_9F} &\rightarrow {\rm ^{17}_8O + e^+ + \nu_e} \\
+    {\rm ^{17}_8O + ^1_1H} &\rightarrow {\rm ^{14}_7N + ^4_2He}
+\end{align*}
+
+{\noindent}\textbf{Combinations}:
+\begin{align*}
+    C(n,x) = \frac{Pm(n,x)}{x!} = \frac{n!}{x!(n-x)!} = \binom{n}{x} ~ [{\rm dimensionless}]
+\end{align*}
+
+{\noindent}\textbf{Comoving sound horizon}:
+\begin{align*}
+    r_\mathrm{H,com}(z) = \int\limits_0^t \frac{c\mathrm{d}t}{a(t)} = \int\limits_0^{(1+z)^{-1}} \frac{c\mathrm{d}a}{a^2H(a)} ~ [{\rm Mpc}]
+\end{align*}
+
+{\noindent}\textbf{Complex visibility}:
+\begin{align*}
+    \mathcal{V} &\equiv R_c - i R_s ~ [{\rm V^2}] \\
+    \mathcal{V} &= Ae^{-i\phi} = \sqrt{R_c^2 + R_s^2} e^{-i\phi} ~ [{\rm V^2}] \\
+    \mathcal{V} &= \int I(\hat{s}) \exp (-i2\pi\vec{b}\cdot\hat{s}/\lambda){\rm d}\Omega ~ [{\rm V^2}]
+\end{align*}
+
+{\noindent}\textbf{Compton y-parameter}:
+\begin{align*}
+    y = \int\frac{k_BT}{m_ec^2}\sigma_Tn_e\mathrm{d}l ~ [{\rm dimensionless}]
+\end{align*}
+
+{\noindent}\textbf{Condition for degeneracy}:
+\begin{align*}
+    \frac{T}{\rho^{2/3}} < \mathcal{D} ~ [{\rm K\,m^2\,kg^{-2/3}}], ~~~ \mathcal{D} \equiv 1261\,{\rm K\,m^2\,kg^{-2/3}}
+\end{align*}
+
+{\noindent}\textbf{Cosmological constant}:
+\begin{align*}
+    \Lambda = \frac{3H_0^2}{c^2}\Omega_\Lambda ~ [{\rm m^{-2}}]
+\end{align*}
+
+{\noindent}\textbf{Correlation function of CMB temperature anisotropies}:
+\begin{align*}
+    C(\theta) = \left\langle\frac{\delta T}{T}(\hat{n})\frac{\delta T}{T}(\hat{n}')\right\rangle_{\hat{n}\cdot\hat{n}'=\cos\theta}  ~ [{\rm dimensionless}] \\
+    C(\theta) = \frac{1}{4\pi} \sum\limits_{\ell=0}^\infty (2\ell+\ell)(C_\ell)P_\ell(cos\theta) ~ [{\rm dimensionless}]
+\end{align*}
+
+{\noindent}\textbf{Collision rate}:
+\begin{align*}
+    r = \int\int v\sigma(v){\rm d}N_1(\vec{v}_1){\rm d}N_2(\vec{v}_2) ~ [{\rm s^{-1}\,m^{-3}}]
+\end{align*}
+
+{\noindent}\textbf{Collisional coupling coefficient}:
+\begin{align*}
+    x_c &= x_c^\mathrm{HH} + x_c^\mathrm{eH} + x_c^\mathrm{pH} \\
+        &= \frac{T_*}{A_{10}T_\gamma} \left[k_{1-0}^\mathrm{HH}(T_k)n_\mathrm{H}+k_{1-0}^{e\mathrm{H}}(T_k)n_e+k_{1-0}^{p\mathrm{H}}(T_k)n_p\right] ~ [{\rm dimensionless}]
+\end{align*}
+
+{\noindent}\textbf{Colour excess-HI column density relation}:
+\begin{align*}
+    E(B-V) = 1.7 \left(\frac{N_\mathrm{H}}{10^{22}\,{\rm atoms\,cm^{-2}}}\right) ~ [{\rm mag}]
+\end{align*}
+
+{\noindent}\textbf{Correlator response (interferometer; extended source)}:
+\begin{align*}
+    R_c = \int I(\hat{s})\cos(2\pi\nu\vec{b}\cdot\hat{s}/c){\rm d}\Omega = \int I(\hat{s})\cos(2\pi\vec{b}\cdot\hat{s}/\lambda){\rm d}\Omega ~ [{\rm V^2}]
+\end{align*}
+
+{\noindent}\textbf{Correlator response (interferometer; point source)}:
+\begin{align*}
+    R = \langle V_1V_2 \rangle = \left(\frac{V^2}{2}\right)\cos(\omega\tau_g) ~ [{\rm V^2}]
+\end{align*}
+
+{\noindent}\textbf{Coulomb energy}:
+\begin{align*}
+    E_{\rm Coul} = \frac{Z_1Z_2e^2}{r} ~ [{\rm MeV}]
+\end{align*}
+
+{\noindent}\textbf{Coulomb logarithm}:
+\begin{align*}
+    \ln\Lambda \equiv \ln \left(\frac{b_{\rm min}}{b_{\rm max}}\right) ~ [{\rm dimensionless}]
+\end{align*}
+
+{\noindent}\textbf{Coupling coefficient (total)}:
+\begin{align*}
+    x_\mathrm{tot} \equiv x_c + x_\alpha ~ [{\rm dimensionless}]
+\end{align*}
+
+{\noindent}\textbf{Critical density}:
+\begin{align*}
+    \rho_c \equiv \dfrac{3H_0^2}{8\pi G}  ~ [{\rm g\,cm^{-3}}]
+\end{align*}
+
+{\noindent}\textbf{Critical density}:
+\begin{align*}
+    \rho_\mathrm{crit} \sim \frac{c_s^2}{G\ell_s\ell} ~ [{\rm g\,cm^{-3}}]
+\end{align*}
+
+{\noindent}\textbf{Cross section (radiation pressure)}:
+\begin{align*}
+   C_{\rm pr}(\lambda) \equiv C_{\rm abs}(\lambda) + (1-\langle\cos\theta\rangle)C_{\rm sca}(\lambda) ~ [{\rm cm^2}]
+\end{align*}
+
+{\noindent}\textbf{Crossing timescale}:
+\begin{align*}
+    t_\mathrm{cross} = \frac{R}{v} ~ [{\rm yr}]
+\end{align*}
+
+{\noindent}\textbf{Curvature term}:
+\begin{align*}
+S_\kappa(r) =
+\left\{
+\begin{aligned}
+R\sin(r/R), ~~~~~& (\kappa = +1) \\
+          r,~~~~~& (\kappa = 0) \\
+R\sinh(r/R),~~~~~& (\kappa = -1)
+\end{aligned}
+\right.
+\end{align*}
+
+{\noindent}\textbf{Dark energy density}:
+\begin{align*}
+    \rho_\Lambda \equiv \dfrac{\Lambda}{8\pi G} ~ [{\rm g\,cm^{-3}}]
+\end{align*}
+
+{\noindent}\textbf{Deceleration parameter}:
+\begin{align*}
+    q_0 = \Omega_{r,0} + \frac{1}{2}\Omega_{m,0} - \Omega_\Lambda ~ [{\rm dimensionless}]
+\end{align*}
+
+{\noindent}\textbf{Deflection angle (gravitational lensing)}:
+\begin{align*}
+    \alpha = \frac{4GM}{c^2}\frac{1}{r^2} ~ [{\rm rad}]
+\end{align*}
+
+{\noindent}\textbf{Deflection angle (gravitational lensing, Solar value)}:
+\begin{align*}
+    \alpha_\odot = \frac{4GM_\odot}{c^2}\frac{1}{R_\odot^2} = 1.74 ~ [{\rm rad}].
+\end{align*}
+
+{\noindent}\textbf{Density contrast}:
+\begin{align*}
+    \delta(\mathbf{x},t) \equiv \frac{\rho(\mathbf{x},t)-\langle\rho(t)\rangle}{\langle\rho(t)\rangle} ~ [{\rm dimensionless}]
+\end{align*}
+
+{\noindent}\textbf{Density parameter}:
+\begin{align*}
+    \Omega_i \equiv \frac{\rho_i}{\rho_c} ~ [{\rm dimensionless}]
+\end{align*}
+
+{\noindent}\textbf{Density parameter (total)}:
+\begin{align*}
+    \Omega = \sum\Omega_i \equiv \sum \frac{\rho_i}{\rho_c} ~ [{\rm dimensionless}]
+\end{align*}
+
+{\noindent}\textbf{Density parameter of curvature}:
+\begin{align*}
+    \Omega_\kappa = 1-\Omega_0 ~ [{\rm dimensionless}]
+\end{align*}
+
+{\noindent}\textbf{Density parameter of dark energy}:
+\begin{align*}
+    \Omega_\Lambda &\equiv \dfrac{\rho_\Lambda}{\rho_c} \\
+    &= \left(\dfrac{\Lambda}{\cancel{8\pi G}}\right) \left(\dfrac{\cancel{8\pi G}}{3H_0}\right) \\
+    &= \dfrac{\Lambda}{3H_0} ~ [{\rm dimensionless}]
+\end{align*}
+
+{\noindent}\textbf{Density parameter of matter}:
+\begin{align*}
+    \Omega_m(a) \equiv \dfrac{\rho_m}{\rho_c}a(t)^{-3} ~ [{\rm dimensionless}]
+\end{align*}
+
+{\noindent}\textbf{Density parameter of radiation}:
+\begin{align*}
+    \Omega_r(a) \equiv \dfrac{\rho_r}{\rho_c}a(t)^{-4} ~ [{\rm dimensionless}]
+\end{align*}
+
+{\noindent}\textbf{Density-redshift-scalefactor relation}:
+\begin{align*}
+    \bar{\rho}(z) = \bar{\rho}_0(1+z)^3 = \frac{\bar{\rho}_0}{a^3} ~ [{\rm g\,cm^{-3}}]
+\end{align*}
+
+{\noindent}\textbf{Deviation}:
+\begin{align*}
+    d_i \equiv x_i - \mu ~ [{\rm function}]
+\end{align*}
+
+{\noindent}\textbf{Deviation (average)}:
+\begin{align*}
+    \alpha \equiv \lim_{N\rightarrow\infty}\left[ \frac{1}{N} \sum \left\lvert x_i-\mu\right\rvert \right] ~ [{\rm function}]
+\end{align*}
+
+{\noindent}\textbf{Diffusion coefficient}:
+\begin{align*}
+    D = \frac{1}{3}v\ell_{\rm mfp} ~ [{\rm s^{-1}}]
+\end{align*}
+
+{\noindent}\textbf{Diffusive flux}:
+\begin{align*}
+    \vec{j} = -D\nabla n ~ [{\rm m^{-2}\,s^{-1}}]
+\end{align*}
+
+{\noindent}\textbf{Dimensionless density}:
+\begin{align*}
+    \theta = \left(\frac{\rho}{\rho_c}\right)^{1/n} ~ [{\rm dimensionless}]
+\end{align*}
+
+{\noindent}\textbf{Dimensionless radius}:
+\begin{align*}
+    \xi &\equiv \frac{r}{a} = \frac{r}{\sqrt{\dfrac{(n+1)K}{4\pi G}\rho_c^{(1-n)/n}}} ~ [{\rm dimensionless}]
+\end{align*}
+
+{\noindent}\textbf{Dimensionless variables for Lane-Emden equation}:
+\begin{align*}
+    z &= Ar ~ [{\rm dimensionless}], ~~~ A^2 = \frac{4\pi G}{(n+1)^nK^n}(-\Phi^c)^{n-1} = \frac{4\pi G}{(n+1)K}\rho_c^{(n-1)/n} ~ [{\rm dimensionless}],\\
+    w &= \frac{\Phi}{\Phi_c} = \left(\frac{\rho}{\rho_c}\right)^{1/n} ~ [{\rm dimensionless}]
+\end{align*}
+
+{\noindent}\textbf{Dipole moment}:
+\begin{align*}
+    \vec{\mu} &= q\vec{d} ~ [{\rm C\,m}] \\
+    \vec{\mu} &= \alpha\vec{E} ~ [{\rm C\,m}] \\
+    \vec{d} &= e\vec{r} ~ [{\rm C\,m}]
+\end{align*}
+
+{\noindent}\textbf{Distance (moving cluster)}:
+\begin{align*}
+    d = \frac{v_r\tan\theta}{\mu} ~ [{\rm pc}]
+\end{align*}
+
+{\noindent}\textbf{Distance (parallax)}:
+\begin{align*}
+    d = \left(\frac{p}{1''}\right)^{-1} ~ {[\rm pc]}
+\end{align*}
+
+{\noindent}\textbf{Distance (photometric)}:
+\begin{align*}
+    m-M = 5\log\left(\frac{d}{1\,{\rm pc}}\right)-5+A ~ [{\rm mag}]
+\end{align*}
+
+{\noindent}\textbf{Distance (spectroscopic)}:
+\begin{align*}
+    m_V-A_V-M_V = 5\log\left(\frac{d}{1\,{\rm pc}}\right)-5 ~ [{\rm mag}]
+\end{align*}
+
+{\noindent}\textbf{Distance modulus}:
+\begin{align*}
+    m - M \approx 43.17 - 5\log_{10} \left(\frac{H_0}{70\,{\rm km\,s^{-1}\,Mpc}}\right) + 5\log_{10}z + 1.086(1-q_0)z ~ [{\rm mag}]
+\end{align*}
+
+{\noindent}\textbf{Distance relation (low redshift)}:
+\begin{align*}
+    d_p(t_0) \approx d_L \approx \frac{c}{H_0}z ~ [{\rm Mpc}]
+\end{align*}
+
+{\noindent}\textbf{Distance-redshift relation (flat Universe)}:
+\begin{align*}
+    d_L(\kappa=0) = r(1+z) = d_p(t_0)(1+z) ~ [{\rm Mpc}]
+\end{align*}
+
+{\noindent}\textbf{Doppler law}:
+\begin{align*}
+    \frac{v}{c} &= \frac{\Delta\lambda}{\lambda} =  \frac{\lambda_\mathrm{obs}-\lambda_\mathrm{em}}{\lambda_\mathrm{obs}} ~ [{\rm dimensionless}] \\
+    \frac{v}{c} &= \frac{-\Delta\nu}{\nu} =  \frac{\nu_\mathrm{em}-\nu_\mathrm{obs}}{\nu_\mathrm{em}} ~ [{\rm dimensionless}]
+\end{align*}
+
+{\noindent}\textbf{Eccentricity}:
+\begin{align*}
+    e = \sqrt{1-\frac{b^2}{a^2}} ~ [{\rm dimensionless}]
+\end{align*}
+
+{\noindent}\textbf{Eddington luminosity}:
+\begin{align*}
+    L_E &= \frac{4\pi cGM}{\kappa} ~ [{\rm J\,s^{-1}}] \\
+    \frac{L_E}{{\rm L_\odot}} &= 1.3\times10^4\frac{1}{\kappa} \frac{M}{{\rm M_\odot}}
+\end{align*}
+
+{\noindent}\textbf{Effective radius of dust grain}:
+\begin{align*}
+    a_{\rm eff} &\equiv \left(\frac{3V}{4\pi}\right)^{1/3}  ~ [{\rm \mu m}]
+\end{align*}
+
+{\noindent}\textbf{Einstein relations}:
+\begin{align*}
+    g_1B_{lu} &= g_2B_{ul} ~ [{\rm s^{-1}}] \\
+    A_{ul}    &= \frac{2h\nu^3}{c^2}B_{ul}  ~ [{\rm s^{-1}}]
+\end{align*}
+
+{\noindent}\textbf{Electric polarizability}:
+\begin{align*}
+    \alpha = \frac{\vec{\mu}}{\vec{E}} ~ [{\rm C\,m^2\,V^{-1}}]
+\end{align*}
+
+{\noindent}\textbf{Electron capture}:
+\begin{align*}
+    p^+ +e^- \rightarrow\,n + \nu_e
+\end{align*}
+
+{\noindent}\textbf{Electron radius (classical)}:
+\begin{align*}
+    r_{e,0} = \frac{e^2}{m_ec^2} ~ [{\rm cm}]
+\end{align*}
+
+{\noindent}\textbf{Elliptical $D_n-\sigma$ relation}:
+\begin{align*}
+    I_n\left(\frac{D_n}{2}\right)^2\pi &= 2\pi I_eR_e^2 \int\limits_0^{D_n/(2R_e)} ~ [{\rm erg\,s^{-1}\,m^{-2}}] \\
+    D_n &= 2.05\times\left(\frac{\sigma_v}{100\,km\,s^{-1}}\right) ~ [{\rm kpc}]
+\end{align*}
+
+{\noindent}\textbf{Efficiency factor (absorption)}:
+\begin{align*}
+    Q_{\rm abs} &\equiv \frac{C_{\rm abs}}{\pi a_{\rm eff}^2} ~ [{\rm cm^{-2}}]
+\end{align*}
+
+{\noindent}\textbf{Efficiency factor (extinction)}:
+\begin{align*}
+    Q_{\rm ext} \equiv Q_{\rm abs} + Q_{\rm sca} ~ [{\rm cm^{-2}}]
+\end{align*}
+
+{\noindent}\textbf{Efficiency factor (scattering)}:
+\begin{align*}
+    Q_{\rm sca} &\equiv \frac{C_{\rm sca}}{\pi a_{\rm eff}^2} ~ [{\rm cm^{-2}}]
+\end{align*}
+
+{\noindent}\textbf{Electric field (Cartesian components)}:
+\begin{align*}
+    E_x &= a_1(t)\exp[i(\phi_1(t)-2\pi\nu t)] \\
+    E_y &= a_2(t)\exp[i(\phi_2(t)-2\pi\nu t)] \\
+    E_z &= 0
+\end{align*}
+
+{\noindent}\textbf{Electric field (Stokes parameters)}:
+\begin{align*}
+    I &= \langle{a_1^2}\rangle + \langle{a_2^2}\rangle \\
+    Q &= \langle{a_1^2}\rangle - \langle{a_2^2}\rangle \\
+    U &= 2\langle{a_1a_2\cos\phi}\rangle \\
+    V &= 2\langle{a_1a_2\sin\phi}\rangle
+\end{align*}
+
+{\noindent}\textbf{Energy density}:
+\begin{align*}
+    \Omega \equiv \dfrac{\rho}{\rho_c} = nE ~ [{\rm dimensionless}]
+\end{align*}
+
+{\noindent}\textbf{Energy produced per kilogram of stellar material}:
+\begin{align*}
+    \epsilon = &\left[ N_A^2Q \langle\sigma v\rangle \left(\frac{X_1}{m_1}\right) \left(\frac{X_2}{m_2}\right) \right] \rho ~ [{\rm eV\,g^{-1}}] \\
+    \epsilon &\approx \epsilon_0\rho T^\nu ~ [{\rm W\,kg^{-1}}] \\
+    \epsilon &= \frac{{\rm d}L_r}{{\rm d}m} ~ [{\rm W\,kg^{-1}}]
+\end{align*}
+
+{\noindent}\textbf{Energy produced per kilogram of stellar material (pp chain)}:
+\begin{align*}
+    \epsilon_{pp} = 0.241\rho X^2 f_{pp}\psi_{pp}C_{pp}T_6^{-2/3}e^{-33.80T_6^{-1/3}} ~ [{\rm W\,kg^{-1}}]
+\end{align*}
+
+{\noindent}\textbf{Energy-redshift relation}:
+\begin{align*}
+    E = E_0(1+z) ~ [{\rm eV}]
+\end{align*}
+
+{\noindent}\textbf{Escape velocity}:
+\begin{align*}
+    v_\mathrm{esc} = \sqrt{\frac{2GM}{r}} ~ [{\rm km\,s^{-1}}]
+\end{align*}
+
+{\noindent}\textbf{Euler's formula}:
+\begin{align*}
+    e^{i\phi} = \cos\phi + i\sin\phi ~ [{\rm rad}]
+\end{align*}
+
+{\noindent}\textbf{Extinction}:
+\begin{align*}
+    A_\nu &\equiv m-m_0 ~ [{\rm mag}] \\
+          & = -2.5\log\left(\frac{I_{\nu,0}}{I_\nu}\right) ~ [{\rm mag}] \\
+          & = -2.5\log\left(\frac{F_{\nu,0}}{F_\nu}\right) ~ [{\rm mag}] \\
+          &= 2.5\log(e)\tau_\nu ~ [{\rm mag}] \\
+          &= 1.086\tau_\nu ~ [{\rm mag}]
+\end{align*}
+
+{\noindent}\textbf{Extinction coefficient for the MWG}:
+\begin{align*}
+    A_{V,\mathrm{MWG}} = (3.1\pm0.1)E(B-V) ~ [{\rm mag}]
+\end{align*}
+
+{\noindent}\textbf{Extinction coefficient in the Solar neighborhood}:
+\begin{align*}
+    A_V \approx \frac{d}{1\,{\rm kpc}} ~ [{\rm mag}]
+\end{align*}
+
+{\noindent}\textbf{Extinction cross section}:
+\begin{align*}
+    C_{\rm ext}(\lambda) \equiv C_{\rm abs}(\lambda)+C_{\rm sca}(\lambda) ~ [{\rm cm^2}]
+\end{align*}
+
+{\noindent}\textbf{Faber-Jackson relation}:
+\begin{align*}
+    L_\mathrm{FJ} \propto \sigma_v^4 ~ [{\rm erg\,s^{-1}}]
+\end{align*}
+
+{\noindent}\textbf{Farad}:
+\begin{align*}
+    {\rm 1\,F \equiv s^4\,A^2\,m^{-2}\,kg^{-1}}
+\end{align*}
+
+{\noindent}\textbf{Fermi energy}:
+\begin{align*}
+    E_F = \frac{\hbar^2}{2m} (3\pi^2n)^{2/3} ~ [{\rm J}]
+\end{align*}
+
+{\noindent}\textbf{Flux}:
+\begin{align*}
+    F = \frac{L}{4\pi S_\kappa(r)^2}(1+z)^{-2} ~ [{\rm erg\,s^{-1}\,cm^{-2}}]
+\end{align*}
+
+{\noindent}\textbf{Flux (conductive)}:
+\begin{align*}
+    \vec{F}_{\rm cd} = -k_{\rm cd}\nabla T ~ [{\rm m^2\,s^{-1}}]
+\end{align*}
+
+{\noindent}\textbf{Flux (radiative)}:
+\begin{align*}
+    F_r &= -\frac{4acT^3}{3\kappa\rho}\frac{{\rm d}T}{{\rm d}r} ~ [{\rm erg\,s^{-1}\,cm^{-2}}] \\
+    F_r &=  \frac{L_r}{4\pi r^2} ~ [{\rm erg\,s^{-1}\,cm^{-2}}]
+\end{align*}
+
+{\noindent}\textbf{Flux (spectral)}:
+\begin{align*}
+    F_\lambda(t) = \int\limits_0^t \mathrm{SFR}(t-t')S_{\lambda,Z(t-t')}(t')\,\mathrm{d}t' ~ [{\rm erg\,s^{-1}\,cm^{-2}\,Hz^{-1}}]
+\end{align*}
+
+{\noindent}\textbf{Free-fall time}:
+\begin{align*}
+    \tau_{\rm ff} = \sqrt{\frac{3\pi}{32G\rho_0}} = 4.4\times10^4 \left(\frac{n_{\rm H}}{10^6\,{\rm cm^{-3}}}\right)^{-1/2} ~ [{\rm yr}]
+\end{align*}
+
+{\noindent}\textbf{Friedmann equation}:
+\begin{align*}
+    \left(\frac{\dot{a(t)}}{a(t)}\right)^2 &=  \left(\frac{H}{H_0}\right)^2 = \frac{8\pi G}{3}\rho - \frac{\kappa c^2}{R_0^2a(t)^2} + \frac{\Lambda}{3} \\
+    \left(\frac{H}{H_0}\right)^2 &= \frac{\Omega_{r,0}}{a^4} + \frac{\Omega_{m,0}}{a^3} + \Omega_{\Lambda,0} + \frac{1-\Omega_0}{a^2}
+\end{align*}
+
+{\noindent}\textbf{Fringe phase (interferometer)}:
+\begin{align*}
+    \phi = \omega\tau_g = \frac{\omega}{c} b\cos\theta ~ [{\rm rad}] \\
+    \frac{{\rm d\phi}}{{\rm d}\theta} = \frac{\omega}{c} b\sin\theta &= 2\pi \left(\frac{b\sin\theta}{\lambda}\right) ~ [{\rm dimensionless}]
+\end{align*}
+
+{\noindent}\textbf{Full-width at half maximum}:
+\begin{align*}
+    \Gamma=2\sqrt{2\ln2}\sigma \approx 2.354\sigma ~ [{\rm function}]
+\end{align*}
+
+{\noindent}\textbf{Geometric delay (interferometer)}:
+\begin{align*}
+    \tau_g = \frac{\vec{b}\cdot\hat{s}}{c} ~ [{\rm s}].
+\end{align*}
+
+{\noindent}\textbf{Gravitational acceleration}:
+\begin{align*}
+    g(r) = -\frac{{\rm d}\Phi}{{\rm d}r} ~ [{\rm m\,s^{-2}}]
+\end{align*}
+
+{\noindent}\textbf{Gravitational potential energy}:
+\begin{align*}
+    E_g &= -\frac{GMm}{R} ~ [{\rm J}] \\
+    &\sim -\frac{16\pi^2}{15}G\bar{\rho}^2R^5 \sim -\frac{3}{5}\frac{GM^2}{R} ~ [{\rm J}]
+\end{align*}
+
+{\noindent}\textbf{Gravitational radius}:
+\begin{align*}
+    R_g = \frac{2GM}{c^2} ~ [{\rm km}]
+\end{align*}
+
+{\noindent}\textbf{Gravitational wave phase shift}:
+\begin{align*}
+    \Delta\Phi \propto \Delta L ~ [{\rm rad}]
+\end{align*}
+
+{\noindent}\textbf{Gravitational wave strain}:
+\begin{align*}
+    h &\equiv \frac{\Delta L}{L} = F_+h_+(t) + F_\times h_\times(t) ~ [{\rm dimensionless}] \\
+    h &\sim \frac{1}{c^2} \frac{4G(E_{\rm kin}^{\rm ns}/c^2)}{r}  ~ [{\rm dimensionless}]
+\end{align*}
+
+{\noindent}\textbf{Growth factor}:
+\begin{align*}
+    D_+(t) \propto \frac{H(a)}{H_0}\int\limits_0^a \frac{da'}{[\Omega_m/a'+\Omega_\Lambda a'^2-(\Omega_m+\Omega_\Lambda-1)]^{3/2}} ~ [{\rm dimensionless}]
+\end{align*}
+
+{\noindent}\textbf{Gunn-Peterson optical depth}:
+\begin{align*}
+    \tau_\mathrm{GP} &= \frac{\pi e^2}{m_ec^2}f_\alpha\lambda_\alpha H^{-1}(z)n_\mathrm{HI} ~ [{\rm dimensionless}] \\
+    \tau_\mathrm{GP}(z) &= 4.9\times10^5 \left(\frac{\Omega_mh^2}{0.13}\right)^{-1/2} \left(\frac{\Omega_bh^2}{0.02}\right) \left(\frac{1+z}{7}\right)^{3/2} \left(\frac{n_\mathrm{HI}}{n_\mathrm{H}}\right) ~ [{\rm dimensionless}]
+\end{align*}
+
+{\noindent}\textbf{Hamilton's equations}:
+\begin{align*}
+    \dot{q}_i \equiv \frac{\partial H}{\partial p_i}; ~~~ \dot{p} \equiv -\frac{\partial H}{\partial q_i}
+\end{align*}
+
+{\noindent}\textbf{Harrison-Zeldovich power spectrum}:
+\begin{align*}
+    P(k) \propto k^{n_s-1} ~ [{\rm \mu K^2}]
+\end{align*}
+
+{\noindent}\textbf{Helium mass fraction}:
+\begin{align*}
+    Y = \frac{4\times n_n/2}{n_n + n_p}  = \frac{2}{1 + n_n/n_n} ~ [{\rm dimensionless}]
+\end{align*}
+
+{\noindent}\textbf{Henry (unit)}:
+\begin{align*}
+    {\rm 1\,H \equiv 1\,kg\,m^2\,s^{-2}\,A^{-2}}
+\end{align*}
+
+{\noindent}\textbf{Horizon angular size at recombination}:
+\begin{align*}
+    \theta_{H,\mathrm{rec}} \approx \sqrt{\frac{\Omega_m}{z_\mathrm{rec}}} \sim \frac{\sqrt{\Omega_m}}{30} \sim \sqrt{\Omega_m}2 ~ [{\rm ^\circ}]
+\end{align*}
+
+{\noindent}\textbf{Hubble constant}:
+\begin{align*}
+    H_0(t) \equiv \dfrac{\dot{a_0}(t)}{a_0(t)} = \dot{a_0}(t) ~ [{\rm km\,s^{-1}\,Mpc}]
+\end{align*}
+
+{\noindent}\textbf{Hubble distance}:
+\begin{align*}
+    d_H \equiv \frac{c}{H(t)} ~ [{\rm Mpc}]
+\end{align*}
+
+{\noindent}\textbf{Hubble time}:
+\begin{align*}
+    t_H \equiv ct_H = \frac{1}{H_0(t)} ~ [{\rm Gyr}]
+\end{align*}
+
+{\noindent}\textbf{Hubble's law}:
+\begin{align*}
+    v = H_0d ~ [{\rm km\,s^{-1}}]
+\end{align*}
+
+{\noindent}\textbf{Hydrostatic equilibrium}:
+\begin{align*}
+    \frac{{\rm d}P}{{\rm d}r} = -\frac{GM_r\rho}{r^2} = -\rho g ~ [{\rm P\,m^{-1}}], ~~~ g \equiv \frac{GM_r}{r^2} ~ [{\rm m\,s^{-2}}]
+\end{align*}
+
+{\noindent}\textbf{Ideal gas law}:
+\begin{align*}
+    P &= \frac{Nk_BT}{V} ~ [{\rm P}] \\
+    P &= \frac{\rho k_BT}{\bar{m}} ~ [{\rm P}] \\
+    P &= \frac{\rho k_BT}{\mu m_{\rm H}} ~ [{\rm P}]
+\end{align*}
+
+{\noindent}\textbf{IMF peak mass}:
+\begin{align*}
+    M_\mathrm{peak} &\propto \frac{c_s^3}{\sqrt{G^3\bar{\rho}}}  ~ [{\rm M_\odot}] \\
+    M_\mathrm{peak} &\propto \frac{c_s^2\ell_s}{G} ~ [{\rm M_\odot}]
+\end{align*}
+
+{\noindent}\textbf{IMF (Salpeter)}:
+\begin{align*}
+    \xi(m) \propto m^{-2.35} ~ [{\rm dimensionless}]
+\end{align*}
+
+{\noindent}\textbf{Index of refraction}:
+\begin{align*}
+    n \equiv \frac{c}{v} ~ [{\rm dimensionless}]
+\end{align*}
+
+{\noindent}\textbf{Interferometer arm-length difference}:
+\begin{align*}
+    \Delta L &\equiv L_1 - L_2 ~ [{\rm m}] \\
+    \frac{\Delta L}{L} &= F_+h_+(t) + F_\times h_\times(t) \equiv h(t) ~ [{\rm dimensionless}]
+\end{align*}
+
+{\noindent}\textbf{Isochrone potential}:
+\begin{align*}
+    \Phi(r) = - \frac{GM}{b + \sqrt{b^2+r^2}} ~ [{\rm J}]
+\end{align*}
+
+{\noindent}\textbf{Jeans growth time}:
+\begin{align*}
+    \tau_J = \frac{1}{k_Jc_s} = \frac{1}{\sqrt{4\pi G\rho_0}} = 2.3\times10^4 \left(\frac{n_{\rm H}}{10^6\,{\rm cm^{-3}}}\right)^{-1/2} ~ [{\rm yr}]
+\end{align*}
+
+{\noindent}\textbf{Jeans mass}:
+\begin{align*}
+    M_J &\equiv \frac{4\pi}{3}\rho_0 \left(\frac{\lambda_J}{2}\right)^3 \\
+        &= \frac{1}{8} \left(\frac{\pi kT}{\mu G}\right)^{3/2} \rho_0^{-1/2} \\
+        &= 0.32 \left(\frac{T}{10\,{\rm K}}\right)^{3/2} \left(\frac{m_{\rm H}}{\mu}\right)^{3/2} \left(\frac{10^6\,{\rm cm^{-3}}}{n_{\rm H}}\right)^{1/2} ~ [{\rm M_\odot}] \\
+    M_J &\equiv \frac{\pi^{5/2}}{6}\left(\frac{c_s^2}{G}\right)^{3/2}\frac{1}{\sqrt{\bar{\rho}}} ~ [{\rm M_\odot}]
+\end{align*}
+
+{\noindent}\textbf{Jeans wavelength}:
+\begin{align*}
+    \lambda_J \equiv \frac{2\pi}{\kappa_J} = \sqrt{\frac{\pi c_s^2}{G\rho_0}} ~ [{\rm m}]
+\end{align*}
+
+{\noindent}\textbf{Jeans wavenumber}:
+\begin{align*}
+    k_J \equiv \sqrt{\frac{4\pi G\rho_0}{c_s^2}} ~ [{\rm m^{-1}}]
+\end{align*}
+
+{\noindent}\textbf{Kepler's third law}:
+\begin{align*}
+    P = \sqrt{\frac{4\pi^2}{G(m_1+m_2)}a^3} ~ [{\rm yr}]
+\end{align*}
+
+{\noindent}\textbf{Kramers' Law}:
+\begin{align*}
+    \kappa \propto \rho T^{-3.5}
+\end{align*}
+
+{\noindent}\textbf{Lane-Emden equation}:
+\begin{align*}
+    \frac{1}{\xi^2}\frac{{\rm d}}{{\rm d}\xi} \left(\xi^2\frac{{\rm d}\theta}{{\rm d}\xi}\right) &= -\theta^n \\
+    {\rm or} \\
+    \frac{1}{z^2}\frac{{\rm d}}{{\rm d}z} \left(z^2 \frac{{\rm d}w}{{\rm d}z}\right) + w^n &= 0
+\end{align*}
+
+{\noindent}\textbf{Legendre Polynomials}:
+\begin{align*}
+    P_0(x) = 1 ~ [{\rm dimensionless}] \\
+    P_1(x) = x ~ [{\rm dimensionless}] \\
+    P_2(x) = \frac{1}{2}(3x^2-1) ~ [{\rm dimensionless}]
+\end{align*}
+
+{\noindent}\textbf{Light travel time}:
+\begin{align*}
+    t = \frac{4GM}{c^3} ~ [{\rm yr}]
+\end{align*}
+
+{\noindent}\textbf{Line profile (intrinsic)}:
+\begin{align*}
+     \phi_\nu^{\rm intr} = \frac{m_ec^2}{\pi e^2}\frac{1}{f_{\ell u}} \sigma_\nu^{\rm intr} ~ [{\rm cm^2}], ~~~ \int\phi_\nu^{\rm intr}{\rm d}\nu =1
+\end{align*}
+
+{\noindent}\textbf{Lorentz factor}:
+\begin{align*}
+    \gamma = \frac{1}{\sqrt{1-\dfrac{v^2}{c^2}}} ~ [{\rm dimensionless}]
+\end{align*}
+
+{\noindent}\textbf{Lorentz force}:
+\begin{align*}
+    \vec{F} = q(\vec{E}+\vec{v}\times\vec{B}) ~ [{\rm N}]
+\end{align*}
+
+{\noindent}\textbf{Luminosity}:
+\begin{align*}
+    L=4\pi R^2\sigma T^4 ~ [{\rm erg\,s^{-1}}]
+\end{align*}
+
+{\noindent}\textbf{Luminosity (Faber-Jackson)}:
+\begin{align*}
+    L_\mathrm{FJ} \propto \sigma_v^\alpha ~ [{\rm erg\,s^{-1}}]
+\end{align*}
+
+{\noindent}\textbf{Luminosity (synchrotron)}:
+\begin{align*}
+    L_\nu \propto \nu^{-(p-1)/2}\equiv \nu^{-\alpha} ~ [{\rm erg\,s^{-1}}]
+\end{align*}
+
+{\noindent}\textbf{Luminosity (Tully-Fisher)}:
+\begin{align*}
+    L_\mathrm{TF} &= \propto v_\mathrm{max}^\alpha ~ [{\rm erg\,s^{-1}}] \\
+    &= \left(\frac{M}{L}\right)^{-2} \left(\frac{1}{G^2\langle I\rangle}\right)v_\mathrm{max}^4 ~ [{\rm erg\,s^{-1}}]
+\end{align*}
+
+{\noindent}\textbf{Luminosity distance}:
+\begin{align*}
+    d_L &\equiv \sqrt{\frac{L}{4\pi F}} ~ [{\rm Mpc}] \\
+    d_L(z\ll1) &\approx \frac{c}{H_0}z\left(1+\frac{q_0}{2}z\right) ~ [{\rm Mpc}] \\
+    d_L(\kappa=0) &\approx \frac{c}{H_0}z \left(1+\frac{1-q_0}{2}z\right) ~ [{\rm Mpc}]
+\end{align*}
+
+{\noindent}\textbf{Luminosity distance-redshift relation}:
+\begin{align*}
+    d_L = d(1+z) ~ [{\rm Mpc}]
+\end{align*}
+
+{\noindent}\textbf{Luminosity gradient equation}:
+\begin{align*}
+    \frac{{\rm d}L_r}{{\rm d}r} = 4\pi r^2\rho\epsilon ~ [{\rm erg\,s^{-1}\,m^{-1}}]
+\end{align*}
+
+{\noindent}\textbf{Magnetic field}:
+\begin{align*}
+    \vec{B} = \mu\vec{H} ~ [{\rm G}]
+\end{align*}
+
+{\noindent}\textbf{Magnetic monopole density}:
+\begin{align*}
+    n_M(t_\mathrm{GUT}) \sim \frac{1}{(2ct_\mathrm{GUT})^3} \sim 10^{82} ~ [{\rm m^{-3}}]
+\end{align*}
+
+{\noindent}\textbf{Magnification (microlensing)}:
+\begin{align*}
+    A_i &= \left\lvert \frac{\theta_i}{\delta}\frac{{\rm d}\theta_i}{{\rm d}\delta} \right\rvert ~ [{\rm dimensionless}] \\
+    A &= A_+ + A_- = \frac{(\delta/\theta_E)^2+2}{(\delta/\theta_E)\sqrt{(\delta/\theta_E)^2+4}} ~ [{\rm dimensionless}]
+\end{align*}
+
+{\noindent}\textbf{Magnitude (absolute)}:
+\begin{align*}
+    M \equiv -2.5\log_{10}\left(\frac{L}{L_0}\right) ~ [{\rm mag}]
+\end{align*}
+
+{\noindent}\textbf{Magnitude (apparent)}:
+\begin{align*}
+    m \equiv -2.5\log_{10}\left(\frac{F}{F_0}\right) ~ [{\rm mag}]
+\end{align*}
+
+{\noindent}\textbf{Mass conservation equation}:
+\begin{align*}
+    \frac{{\rm d}M_r}{{\rm d}r} = 4\pi r^2\rho ~ [{\rm kg\,m^{-1}}]
+\end{align*}
+
+{\noindent}\textbf{Mass (gravitational lensing)}:
+\begin{align*}
+    M = -\frac{\theta_1\theta_2c^2}{4G} \left(\frac{d_S-d_L}{d_Sd_L}\right) ~ [{\rm M_\odot}]
+\end{align*}
+
+{\noindent}\textbf{Matter density-scale factor relation}:
+\begin{align*}
+    \rho_m = \rho_{m,0}a^{-3} ~ [{\rm g\,cm^{-3}}]
+\end{align*}
+
+{\noindent}\textbf{Maxwell-Boltzmann equation}:
+\begin{align*}
+    n &= g\left(\frac{mk_BT}{2\pi\hbar^2}\right)^{3/2}\exp\left(-\frac{E}{k_BT}\right) = g\left(\frac{mk_BT}{2\pi\hbar^2}\right)^{3/2}\exp\left(-\frac{h\nu}{k_BT}\right) ~ [{\rm m^{-3}}]
+\end{align*}
+
+{\noindent}\textbf{Mean (of distribution)}:
+\begin{align*}
+    \bar{x} \equiv \frac{1}{N} \sum x_i ~ [{\rm function}]
+\end{align*}
+
+{\noindent}\textbf{Mean (of parent population)}:
+\begin{align*}
+    \mu \equiv \lim_{N\rightarrow\infty}\left( \frac{1}{N} \sum x_i \right) ~ [{\rm function}]
+\end{align*}
+
+{\noindent}\textbf{Mean free path}:
+\begin{align*}
+    \ell_\mathrm{mfp} = \dfrac{1}{n\sigma} ~ [{\rm pc}]
+\end{align*}
+
+{\noindent}\textbf{Mean molecular weight}:
+\begin{align*}
+    \mu \equiv \frac{\bar{m}}{m_{\rm H}} = \frac{\rho}{nm_{\rm H}} ~ [{\rm dimensionless}]
+\end{align*}
+
+{\noindent}\textbf{Mean molecular weight (ionized gas)}:
+\begin{align*}
+    \frac{1}{\mu_i} &= \sum \frac{1+z_j}{A_j} X_j ~ [{\rm dimensionless}] \\
+    &\simeq 2X + \frac{3}{4}Y + \left\langle\frac{1+z}{A}\right\rangle_i Z ~ [{\rm dimensionless}] \\
+    \left\langle\frac{1+z}{A}\right\rangle_i &\simeq \frac{1}{2} ~ [{\rm dimensionless}]
+\end{align*}
+
+{\noindent}\textbf{Mean molecular weight (neutral gas)}:
+\begin{align*}
+    \frac{1}{\mu_n} \simeq X + \frac{1}{4}Y + \left\langle\frac{1}{A}\right\rangle_n Z
+\end{align*}
+
+{\noindent}\textbf{Metallicity index}:
+\begin{align*}
+    [{\rm Fe/H}] \equiv \log_{10} \left[\frac{(N_{\rm Fe}/N_{\rm H})_{\rm star}}{(N_{\rm Fe}/N_{\rm H})_\odot}\right] ~ [{\rm dimensionless}]
+\end{align*}
+
+{\noindent}\textbf{Metallicity index}:
+\begin{align*}
+    [\mathrm{X}/\mathrm{H}] \equiv \log\left(\frac{n(\mathrm{X})}{n(\mathrm{H})}\right)_* -\log\left(\frac{n(\mathrm{X})}{n(\mathrm{H})}\right)_\odot ~ [{\rm dimensionless}]
+\end{align*}
+
+{\noindent}\textbf{$n$ over $x$}:
+\begin{align*}
+    \binom{n}{x} \equiv \frac{n!}{x!(n-x)!} ~ [{\rm dimensionless}]
+\end{align*}
+
+{\noindent}\textbf{Neutrino velocity}:
+\begin{align*}
+    v_\nu \sim 150(1+z)\left(\frac{m_\nu}{1\,{\rm eV}}\right)^{-1} ~ [{\rm km\,s^{-1}}]
+\end{align*}
+
+{\noindent}\textbf{Newton}:
+\begin{align*}
+    {\rm 1\,N \equiv \frac{1\,J}{m}}
+\end{align*}
+
+{\noindent}\textbf{Nuclear radius}:
+\begin{align*}
+    r_0 \approx A^{1/3}1.44\times10^{-13} ~ [{\rm fm}]
+\end{align*}
+
+{\noindent}\textbf{Number density}:
+\begin{align*}
+    n &= \frac{\rho}{\bar{m}} ~ [{\rm m^{-3}}] \\
+    n &= \frac{\rho}{\mu m_H} ~ [{\rm cm^{-3}}]
+\end{align*}
+
+{\noindent}\textbf{Number density (Lyman-$\alpha$ forest lines)}:
+\begin{align*}
+    N_\alpha(z) \propto (1+z)
+\end{align*}
+
+{\noindent}\textbf{Number density (synchrotron energy)}:
+\begin{align*}
+    n(\gamma){\rm d}\gamma = n_0\gamma^{-p}{\rm d}\gamma ~ [{\rm eV^{-1}}]
+\end{align*}
+
+{\noindent}\textbf{Oort constants}:
+\begin{align*}
+    A \equiv -\frac{1}{2} \left[\left(\frac{{\rm d}V}{{\rm d}R}\right)_{R_0} -\frac{V_0}{R_0}\right] ~ [{\rm km\,s^{-1}\,kpc^{-1}}],\\
+    B \equiv -\frac{1}{2} \left[\left(\frac{{\rm d}V}{{\rm d}R}\right)_{R_0} +\frac{V_0}{R_0}\right] ~ [{\rm km\,s^{-1}\,kpc^{-1}}]
+\end{align*}
+
+{\noindent}\textbf{Opacity}:
+\begin{align*}
+    \kappa_\nu &= \frac{8\pi}{3} \frac{e_e^2}{\mu_em_u} \\
+    &= 0.20(1+X) ~ [{\rm cm^2\,g^{-1}}]
+\end{align*}
+
+{\noindent}\textbf{Opacity (Rosseland mean)}:
+\begin{align*} 
+    \frac{1}{\kappa} &= \frac{\pi}{acT^3} \int\limits_0^\infty \frac{\partial B}{\partial T} {\rm d}\nu  ~ [{\rm cm^2\,g^{-1}}] \\
+    \kappa_{\rm sc} &= 0.20(1+X) ~ [{\rm cm^2\,g^{-1}}]
+\end{align*}
+
+{\noindent}\textbf{Optical depth}:
+\begin{align*}
+    \tau = \int\limits_0^s \alpha_\nu\mathrm{d}s ~ [{\rm dimensionless}]
+\end{align*}
+
+{\noindent}\textbf{Oxygen burning}:
+\begin{equation*}
+^{16}_8{\rm O} + ^{16}_8{\rm O} \rightarrow 
+\begin{cases}
+    {\rm ^{24}_{12}Mg + 2^4_2He} \\
+    {\rm ^{28}_{14}Si + ^4_2He} \\
+    {\rm ^{31}_{15}P + p^+} \\
+    {\rm ^{31}_{16}S + n} \\
+    {\rm ^{32}_{16}S + \gamma}
+\end{cases}
+\end{equation*}
+
+{\noindent}\textbf{Pascal}:
+\begin{align*}
+    {\rm 1\,P \equiv 1\,N\,m^{-2} \equiv 1\,kg\,m^{-1}\,s^{-2} \equiv 1\,J\,m^{-3}}
+\end{align*}
+
+{\noindent}\textbf{Peculiar velocity}:
+\begin{align*}
+    v_{\rm pec} = c\left(\frac{z-z_\mathrm{cos}}{1+z}\right) ~ [{\rm km\,s^{-1}}]
+\end{align*}
+
+{\noindent}\textbf{Pericenter}:
+\begin{align*}
+    r_1 = a(1-e) ~ [{\rm AU}]
+\end{align*}
+
+{\noindent}\textbf{Permutations}:
+\begin{align*}
+    Pm(n,x) &= \frac{n!}{(n-x)!} ~ [{\rm dimensionless}] \\
+    Pm(n,x) &= n(n-1)(n-2) \cdot\cdot\cdot (n-x+2)(n-x+1) ~ [{\rm dimensionless}]
+\end{align*}
+
+{\noindent}\textbf{Photon energy}:
+\begin{align*}
+    E_\gamma = h\nu ~ [{\rm eV}]
+\end{align*}
+
+{\noindent}\textbf{Photon occupancy number}:
+\begin{align*}
+    n_\gamma &\equiv \frac{c^2}{2h\nu^3} I_\nu ~ [{\rm dimensionless}] \\
+    \bar{n}_\gamma &\equiv \frac{c^2}{2h\nu^3} \bar{I}_\nu = \frac{c^3}{8\pi h\nu^3} u_\nu ~ [{\rm dimensionless}]
+\end{align*}
+
+{\noindent}\textbf{Photon scattering rate (ionized)}:
+\begin{align*}
+    \Gamma = \dfrac{c}{\ell_\mathrm{mfp}} = n_e\sigma_ec = n_b\sigma_ec = \left(\dfrac{n_{b,0}}{a^3}\right)\sigma_ec = \dfrac{4.4\times10^{-21}{a^3}} ~ [{\rm s^{-1}}]
+\end{align*}
+
+{\noindent}\textbf{Planck function}:
+\begin{align*}
+    B_\nu(T) = \frac{2h\nu^3 }{c^2} \frac{1}{\exp(h\nu/k_BT) - 1} ~ [{\rm erg\,s^{-1}\,cm^{-2}\,Hz^{-1}\,sr^{-1}}]
+\end{align*}
+
+{\noindent}\textbf{Polarization angle}:
+\begin{align*}
+    \chi = \frac{1}{2}\arctan\left(\frac{U}{Q}\right) ~ [{\rm deg}]
+\end{align*}
+
+{\noindent}\textbf{Polarization fraction:}
+\begin{align*}
+    p &= \dfrac{P}{I} ~ [{\rm dimensionless}] \\
+    p &= \frac{\sqrt{Q^2+U^2}}{I} ~ [{\rm dimensionless}]
+\end{align*}
+
+{\noindent}\textbf{Polarization fraction (max value):}
+\begin{align*}
+    0 < &p_\mathrm{max} \leq 0.09 \left[\frac{E(B-V)}{{\rm mag}}\right] \approx 0.03\left[\frac{A_V}{{\rm mag}}\right] ~ [{\rm dimensionless}] \\
+    0 < &p_V \lesssim 0.03\tau_V ~ [{\rm dimensionless}]
+\end{align*}
+
+{\noindent}\textbf{Polarization fraction (synchrotron)}:
+\begin{align*}
+    p(\alpha) = \frac{3-3\alpha}{5-3\alpha} ~ [{\rm dimensionless}]
+\end{align*}
+
+{\noindent}\textbf{Polarized intensity}:
+\begin{align*}
+    P = \sqrt{Q^2 + U^2} = pI ~ [{\rm Jy}]
+\end{align*}
+
+{\noindent}\textbf{Polytropic constant}:
+\begin{align*}
+    K = \frac{p}{\rho^\gamma} ~ [{\rm dimensionless}]
+\end{align*}
+
+{\noindent}\textbf{Polytropic equation of state}:
+\begin{align*}
+    P = K\rho^\gamma \equiv K\rho^{1+1/n} ~ [{\rm P}]
+\end{align*}
+
+{\noindent}\textbf{Polytropic index}:
+\begin{align*}
+    n = \frac{1}{\gamma-1} ~ [{\rm dimensionless}]
+\end{align*}
+
+{\noindent}\textbf{Power (synchrotron)}:
+\begin{align*}
+    P = \frac{2}{3}\frac{q^4}{m^2c^5} (\gamma\nu)^2 (B\sin\theta)^2 = 2.37\times10^{-15} \left(\frac{E}{{\rm erg}}\right)^2 \left(\frac{B\sin\theta}{\mu{\rm G}}\right)^2 ~ [{\rm erg\,s^{-1}}]
+\end{align*}
+
+{\noindent}\textbf{Power spectrum}:
+\begin{align*}
+    P(k) = 2\pi \int\limits_0^\infty x^2\frac{\sin(kx)}{kx}\xi(x)\mathrm{d}x ~ [{\rm dimensionless}]
+\end{align*}
+
+{\noindent}\textbf{PPI}:
+\begin{align*}
+    {\rm 4^1_1H} &\rightarrow {\rm ^4_2He + 2e^+ + 2\nu_e + 2\gamma} \\
+    &{\rm or} \\
+    {\rm ^1_1H + ^1_1H} &\rightarrow {\rm ^2_1H + e^+ + \nu_s} \\
+    {\rm ^2_1H + ^1_1H} &\rightarrow {\rm ^3_2H + \gamma} \\
+    {\rm ^3_2He + ^3_2He} &\rightarrow {\rm ^4_2He + 2^1_1H}
+\end{align*}
+
+{\noindent}\textbf{PPII}:
+\begin{align*}
+    {\rm ^3_2He + ^4_2He} &\rightarrow {\rm ^7_4Be + \gamma} \\
+    {\rm ^7_4Be + e^-} &\rightarrow {\rm ^7_3Li + \nu_e} \\
+    {\rm ^7_3Li + ^1_1H} &\rightarrow {\rm 2^4_2He}
+\end{align*}
+
+{\noindent}\textbf{PPIII}:
+\begin{align*}
+    {\rm ^7_4Be + ^1_1H} &\rightarrow {\rm ^8_5B + \gamma} \\
+    {\rm ^8_5B} &\rightarrow {\rm ^8_4Be + e^+ + \nu_e} \\
+    {\rm ^8_4Be} &\rightarrow {\rm 2^4_2He}
+\end{align*}
+
+{\noindent}\textbf{Precession rate}:
+\begin{align*}
+    \Omega_p = \frac{\psi_p}{T_r} = \frac{\Delta\psi-2\pi}{T_r} ~ [{\rm rad\,yr^{-1}}]
+\end{align*}
+
+{\noindent}\textbf{Pressure scale height}:
+\begin{align*}
+    \frac{1}{H_P} \equiv -\frac{1}{P}\frac{{\rm d}P}{{\rm d}r} ~ [{\rm m^{-1}}]
+\end{align*}
+
+{\noindent}\textbf{Probability (binomial)}:
+\begin{align*}
+    P_B(x;n,p) = \binom{n}{x}p^xq^{n-x} = \frac{n!}{x!(n-x)!}p^x(1-p)^{n-x} ~ [{\rm dimensionless}]
+\end{align*}
+
+{\noindent}\textbf{Probability (Poisson)}:
+\begin{align*}
+    \lim_{p\rightarrow0}P_B(x;n,p) = P_P(x;\mu) \equiv \frac{\mu^x}{x!}e^{-\mu} ~ [{\rm function}]
+\end{align*}
+
+{\noindent}\textbf{Probability density (Gaussian)}:
+\begin{align*}
+    p_G = \frac{1}{\sigma\sqrt{2\pi}}\exp \left[-\frac{1}{2} \left(\frac{x-\mu}{\sigma}\right)^2 \right] ~ [{\rm dimensionless}]
+\end{align*}
+
+{\noindent}\textbf{Proper distance}:
+\begin{align*}
+    d_p(t_0) &= c\int\limits_t^{t_0}\frac{\mathrm{d}t}{a(t)} ~ [{\rm Mpc}] \\
+    d_p(t_0,z\ll1) &\approx \frac{c}{H_0}z \left(1-\frac{1+q_0}{2}z\right) ~ [{\rm Mpc}]
+\end{align*}
+
+{\noindent}\textbf{Proper motion}:
+\begin{align*}
+    \mu = \frac{v_t}{d} ~ [{\rm arcsec\,yr}]
+\end{align*}
+
+{\noindent}\textbf{Proper surface area}:
+\begin{align*}
+    A_p(t_0) = 4\pi S_\kappa(r)^2 ~ [{\rm Mpc^2}]
+\end{align*}
+
+{\noindent}\textbf{Quantum tunneling}:
+\begin{align*}
+    P = CE^{-1/2}\exp^{-2\pi\eta}, ~~~ \eta=\sqrt{\frac{m}{2}}\frac{Z_1Z_2e^2}{\hbar\sqrt{E}}.
+\end{align*}
+
+{\noindent}\textbf{R parameter}:
+\begin{align*}
+    R_V \equiv \frac{A_V}{A_B-A_V} \equiv \frac{A_V}{E(B-V)} ~ [{\rm dimensionless}]
+\end{align*}
+
+{\noindent}\textbf{Radial period}:
+\begin{align*}
+    T_r &= 2\int\limits_{r_1}^{r_2} \frac{{\rm d}r}{\sqrt{2[E-\Phi(r)]-\dfrac{L^2}{r^2}}} ~ [{\rm yr}] \\
+    &= T_\psi = \frac{a^2}{L}\sqrt{1-e^2} = 2\pi\sqrt{\frac{a^3}{GM}} ~ [{\rm yr}]
+\end{align*}
+
+{\noindent}\textbf{Radial velocity}:
+\begin{align*}
+    v_r &= \Delta\mathbf{V}\cdot\left(\frac{\sin\ell}{-\cos\ell}\right) = (\Omega-\Omega_0)R_0\sin\ell ~ [{\rm km\,s^{-1}}]
+\end{align*}
+
+{\noindent}\textbf{Radiation density-scale factor relation}:
+\begin{align*}
+    \rho_r = \rho_{r,0}a^{-4} ~ [{\rm g\,cm^{-3}}]
+\end{align*}
+
+{\noindent}\textbf{Radiation energy density}:
+\begin{align*}
+    u = aT^4 = \frac{4\sigma}{c}T^4 ~ [{\rm erg\,cm^{-3}}]
+\end{align*}
+
+{\noindent}\textbf{Radiation energy density (specific)}:
+\begin{align*}
+    (u_\nu)_{\rm LTE} = \frac{4\pi}{c}B_\nu(T) = \frac{8\pi h\nu^3}{c^3}\frac{1}{e^{h\nu/k_BT}-1} ~ [{\rm erg\,cm^{-3}\,Hz^{-1}}]
+\end{align*}
+
+{\noindent}\textbf{Radiation pressure acceleration}:
+\begin{align*}
+    g_{\rm rad} &= -\frac{1}{\rho} \frac{{\rm d}P_{\rm rad}}{{\rm d}r} ~ [{\rm m\,s^{-2}}] \\
+    &= \frac{\kappa F_{\rm rad}}{c} = \frac{\kappa L_r}{4\pi r^2c} ~ [{\rm m\,s^{-2}}]
+\end{align*}
+
+{\noindent}\textbf{Radiative energy transport}:
+\begin{align*}
+    \frac{\partial T}{\partial r} = - \frac{3}{16\pi ac} \frac{\kappa\rho L}{r^2T^3} ~ [{\rm K\,cm^{-1}}]
+\end{align*}
+
+{\noindent}\textbf{Radiative transfer equation}:
+\begin{align*}
+    \frac{\mathrm{d}I_\nu}{\mathrm{d}s} = j_\nu - \alpha_\nu I_\nu ~ [{\rm erg\,s^{-1}\,cm^{-2}\,Hz^{-1}\,sr^{-1}\,pc^{-1}}]
+\end{align*}
+
+{\noindent}\textbf{Radius (Einstein ring)}:
+\begin{align*}
+    r_E &\equiv \theta_E d_L ~ [{\rm AU}] \\
+    r_E &= \sqrt{\frac{4GMd_L}{c^2} \left(\frac{d_S-d_L}{d_S}\right)} ~ [{\rm AU}]
+\end{align*}
+
+{\noindent}\textbf{Radius (neutron star)}:
+\begin{align*}
+    R_{\rm ns} \approx \frac{(18\pi)^{2/3}}{10} \frac{\hbar^2}{GM_{\rm ns}^{1/3}} \left(\frac{1}{m_{\rm H}}\right)^{8/3} ~ [{\rm km}]
+\end{align*}
+
+{\noindent}\textbf{Random walk}:
+\begin{align*}
+    d = \sqrt{N}\ell ~ [{\rm m}]
+\end{align*}
+
+{\noindent}\textbf{Rate of grain photoelectric heating}:
+\begin{align*}
+    \Gamma_{\rm PE} \approx 4.0\times10^{-26}\chi_{\rm FUV}Z_d'e^{-\tau_d} ~ [{\rm erg\,s^{-1}}]
+\end{align*}
+
+{\noindent}\textbf{Rayleigh-Jeans limit}:
+\begin{align*}
+    I_\nu = \frac{2k_BT\nu^2}{c^2} ~ [{\rm erg\,s^{-1}\,cm^{-2}\,Hz^{-1}\,sr^{-1}}]
+\end{align*}
+
+{\noindent}\textbf{Redshift of thermal coupling}:
+\begin{align*}
+    z_t \approx 140\left(\frac{\Omega_bh^2}{0.022}\right)^{2/5} ~ [{\rm dimensionless}]
+\end{align*}
+
+{\noindent}\textbf{Redshift-wavelength-scalefactor relation}:
+\begin{align*}
+    \frac{1}{1+z} = \frac{\lambda}{\lambda_0} = a ~ [{\rm dimensionless}]
+\end{align*}
+
+{\noindent}\textbf{Refractive index}:
+\begin{align*}
+    m=\sqrt{\sigma} ~ [{\rm dimensionless}]
+\end{align*}
+
+{\noindent}\textbf{Relaxation time}:
+\begin{align*}
+    t_\mathrm{relax} &\approx \frac{R}{6v} \frac{N}{\ln(N/2)} ~ [{\rm yr}] \\
+    t_\mathrm{relax} &= \frac{t_\mathrm{cross}}{6} \frac{N}{\ln(N/2)} ~ [{\rm yr}] \\
+    t_{\rm relax} &\simeq \frac{0.1N}{\ln N} t_{\rm cross} ~ [{\rm yr}]
+\end{align*}
+
+{\noindent}\textbf{Robertson-Walker metric}:
+\begin{align*}
+    \mathrm{d}s^2 = c\mathrm{d}t^2 -a(t)^2 \left( \frac{\mathrm{d}x^2}{1-\kappa x^2/R^2} + x^2\Omega^2 \right)
+\end{align*}
+
+{\noindent}\textbf{Rotational velocity (at Solar position)}:
+\begin{align*}
+    V_0 = \sqrt{\frac{GM(<R)}{R_0}} ~ [{\rm m\,s^{-1}}]
+\end{align*}
+
+{\noindent}\textbf{Saha equation}:
+\begin{align*}
+    \frac{n_{i+1}}{n_i} = T^{3/2}\mathrm{e}^{(-1/T)} ~ [{\rm dimensionless}]
+\end{align*}
+
+{\noindent}\textbf{Scale factor evolution (radiation-dominated)}:
+\begin{align*}
+    a_m(t) \propto t^{1/2} ~ [{\rm dimensionless}]
+\end{align*}
+
+{\noindent}\textbf{Scale factor evolution (matter-dominated)}:
+\begin{align*}
+    a_m(t) \propto t^{2/3} ~ [{\rm dimensionless}]
+\end{align*}
+
+{\noindent}\textbf{Scale factor evolution ($\Lambda$-dominated)}:
+\begin{align*}
+    a_\Lambda(t) \propto e^{Ht} ~ [{\rm dimensionless}]
+\end{align*}
+
+{\noindent}\textbf{Scale factor-redshift relation}:
+\begin{align*}
+    a = \dfrac{1}{1+z} ~ [{\rm dimensionless}]
+\end{align*}
+
+{\noindent}\textbf{Schmidt-Kennicutt law}:
+\begin{align*}
+    \frac{\Sigma_\mathrm{SFR}}{{\rm M_\odot\,year^{-1}\,kpc^{-2}}} = (2.5\pm0.7)\times10^{-4} \left(\frac{\Sigma_\mathrm{gas}}{{\rm M_\odot\,pc^{-2}}}\right)^{1.4\pm0.15}
+\end{align*}
+
+{\noindent}\textbf{Schwarzschild radius}:
+\begin{align*}
+    r_S \equiv \frac{2GM}{c^2} = 2.95\left(\frac{M}{{\rm M_\odot}}\right) ~ [{\rm km}]
+\end{align*}
+
+{\noindent}\textbf{Serkowsi Law}:
+\begin{align*}
+    p(\lambda) \approx p_\mathrm{max}\exp \left[-K\ln^2\left(\frac{\lambda}{\lambda_\mathrm{max}}\right)\right] ~ [{\rm dimensionless}]
+\end{align*}
+
+{\noindent}\textbf{Siemen}:
+\begin{align*}
+    {\rm 1\,S \equiv kg^{-1}\,m^{-2}\,s^3\,A^2}
+\end{align*}
+
+{\noindent}\textbf{Solid angle}:
+\begin{align*}
+    \Omega = \frac{A}{r^2} ~ [{\rm sr}]
+\end{align*}
+
+{\noindent}\textbf{Sonic mass}:
+\begin{align*}
+    M_s \approx \frac{c_s^2\ell_s}{G} ~ [{\rm M_\odot}]
+\end{align*}
+
+{\noindent}\textbf{Sound speed}:
+\begin{align*}
+    c_s &= \sqrt{\frac{\partial P}{\partial\rho}} ~ [{\rm m\,s^{-1}}] \\
+    c_s &\sim \sqrt{\frac{k_BT}{\mu m}} ~ [{\rm m\,s^{-1}}]
+\end{align*}
+
+{\noindent}\textbf{Spectral index (IR)}:
+\begin{align*}
+    \alpha_{\rm IR} = \frac{{\rm d}\log\lambda F_\lambda}{{\rm d}\log \lambda} ~ [{\rm dimensionless}]
+\end{align*}
+
+{\noindent}\textbf{Spin temperature}:
+\begin{align*}
+    T_s^{-1} = \frac{T_\gamma^{-1} + x_\alpha T_\alpha^{-1} + x_cT_K^{-1}}{1+x_\alpha+x_c} ~ [{\rm K^{-1}}]
+\end{align*}
+
+{\noindent}\textbf{Spin temperature of $21\,{\rm cm}$}:
+\begin{align*}
+    \frac{n_1}{n_2} = \frac{g_1}{g_2}\exp\left(-\frac{0.068\,{\rm K}}{T_s}\right) ~ [{\rm dimensionless}],
+\end{align*}
+
+{\noindent}\textbf{S/N (CCD)}:
+\begin{align*}
+    \frac{\rm S}{\rm N} &= \frac{N_*}{\sqrt{N_*+n_{\rm pix}(N_s+N_D+N_R^2)}} ~ [{\rm dimensionless}] \\
+    \frac{S}{N} &= \frac{N_*}{\sqrt{N_*+n_{\rm pix}\left(1+\frac{n_{\rm pix}}{n_B}\right)(N_S+N_D+N_R^2+G^2\sigma_f^2)}} ~ [{\rm dimensionless}]
+\end{align*}
+
+{\noindent}\textbf{Standard deviation (of distribution)}:
+\begin{align*}
+    s \equiv \sqrt{\frac{1}{N-1} \sum (x_i-\bar{x})^2} ~ [{\rm function}]
+\end{align*}
+
+{\noindent}\textbf{Standard deviation (of parent population)}:
+\begin{align*}
+    \sigma \equiv \sqrt{\lim{N\rightarrow\infty} \left[\frac{1}{N}\sum(x_i-\mu)^2\right]} = \sqrt{\lim_{N\rightarrow\infty} \left(\frac{1}{N}\sum x_i^2\right)-\mu^2} ~ [{\rm function}]
+\end{align*}
+
+{\noindent}\textbf{Star formation history}:
+\begin{align*}
+    \psi(z) = 0.015\frac{(1+z)^{2.7}}{1+[1+z/2.9]^{5.6}} ~ [{\rm M_\odot\,year^{-1}\,Mpc^{-3}}].
+\end{align*}
+
+{\noindent}\textbf{Star formation rate}:
+\begin{align*}
+    \mathrm{SFR} = -\frac{\mathrm{d}M_\mathrm{gas}}{\mathrm{d}t} ~ [{\rm M_\odot\,yr^{-1}}]
+\end{align*}
+
+{\noindent}\textbf{Star formation rate per unit area}:
+\begin{align*}
+    \Sigma_\mathrm{SFR} \propto \Sigma_\mathrm{gas}^{1.4} ~ [{\rm M_\odot\,year^{-1}\,pc^{-2}}]
+\end{align*}
+
+{\noindent}\textbf{Stefan-Boltzmann constant}:
+\begin{align*}
+    \sigma = \frac{2\pi^5k^4}{15c^2h^3} ~ [{\rm W\,m^{-2}\,K^{-4}}]
+\end{align*}
+
+{\noindent}\textbf{Stefan-Boltzmann Law}:
+\begin{align*}
+    F = \sigma T^4 ~ [{\rm W\,m^{-2}}]
+\end{align*}
+
+{\noindent}\textbf{Str\"omgren radius}:
+\begin{align*}
+    r_s = 30 \left(\frac{N_{48}}{n_{\rm H}n_e}\right)^{1/3} ~ [{\rm pc}]
+\end{align*}
+
+{\noindent}\textbf{Sunyaev-Zeldovich temperature fluctuation}:
+\begin{align*}
+    \frac{\Delta T_\mathrm{SZE}}{T_\mathrm{CMB}} = f(x)y = f(x)\int n_e\frac{k_BT_e}{m_ec^2}\sigma_T \mathrm{d}l ~ [{\rm dimensionless}] \\
+    \frac{\Delta T_\mathrm{SZ}}{T_\mathrm{CMB}} = -\tau_e \left(\frac{v_\mathrm{pec}}{c}\right) ~ [{\rm dimensionless}]
+\end{align*}
+
+{\noindent}\textbf{Surface brightness (bulge)}:
+\begin{align*}
+    \mu_\mathrm{bulge} = \mu_e + 8.3268\left[\left(\frac{R}{R_e}\right)^{1/4}-1\right] ~ [{\rm mag\,arcsec^{-2}}]
+\end{align*}
+
+{\noindent}\textbf{Surface brightness (disk)}:
+\begin{align*}
+    \mu_\mathrm{disk} = \mu_0 + 1.09\left(\frac{R}{h_R}\right) ~ {\rm [mag\,arcsec^{-2}}]
+\end{align*}
+
+{\noindent}\textbf{Synchrotron beam angle}:
+\begin{align*}
+    \theta \approx \pm \frac{mc^2}{E} \approx \frac{1}{\gamma} ~ [{\rm rad}]
+\end{align*}
+
+{\noindent}\textbf{Tangential velocity}:
+\begin{align*}
+    v_t &= \Delta\mathbf{V}\cdot\left(\frac{\cos\ell}{\sin\ell}\right) = (\Omega-\Omega_0)R_0\cos\ell - \Omega D ~ [{\rm km\,s^{-1}}]
+\end{align*}
+
+{\noindent}\textbf{Temperature (bolometric)}:
+\begin{align*}
+    \frac{\int\nu F_\nu {\rm d}\nu}{\int F_\nu {\rm d}\nu} = \frac{\int\nu B_\nu(T_{\rm bol}){\rm d}\nu}{\int B_\nu(T_{\rm bol}){\rm d}\nu}
+\end{align*}
+
+{\noindent}\textbf{Temperature gradient (adiabatic condition)}:
+\begin{align*}
+    \left\lvert\frac{{\rm d}T}{{\rm d}r}\right\rvert_{\rm act} &> \left\lvert\frac{{\rm d}T}{{\rm d}r}\right\rvert_{\rm ad} ~ [{\rm K\,m^{-1}}] \\
+    {\rm or} \\
+    \left\lvert\frac{{\rm d}T}{{\rm d}P}\right\rvert_{\rm act} &> \left\lvert\frac{{\rm d}T}{{\rm d}P}\right\rvert_{\rm ad} ~ [{\rm K\,P^{-1}}]
+\end{align*}
+
+{\noindent}\textbf{Temperature gradient (adiabatic transport)}:
+\begin{align*}
+    \nabla_{\rm ad} = \left(1-\frac{1}{\gamma}\right) \frac{\mu m_{\rm H}}{k}\frac{GM_r}{r^2} ~ [{\rm K\,m^{-1}}]
+\end{align*}
+
+{\noindent}\textbf{Temperature gradient (radiative)}:
+\begin{align*}
+    \nabla_{\rm rad} &\equiv \left(\frac{{\rm d}\ln T}{{\rm d}\ln P}\right)_{\rm rad} ~ [{\rm K\,P^{-1}}] \\
+    &= \frac{3}{16\pi acG}\frac{\kappa LP}{mT^4} ~ [{\rm K\,P^{-1}}] \\
+    &= -\frac{3}{4ac}\frac{\kappa\rho}{T^3}\frac{L_r}{4\pi r^2} ~ [{\rm K\,m^{-1}}]
+\end{align*}
+
+{\noindent}\textbf{Temperature-redshift-scalefactor relation}:
+\begin{align*}
+    T = (1+z)T_0 = \frac{T_0}{a} ~ [{\rm K}]
+\end{align*}
+
+{\noindent}\textbf{Thomson cross section}:
+\begin{align*}
+\sigma_T = \frac{8\pi}{3}r_{e,0}^2 ~ [{\rm m^2}]
+\end{align*}
+
+{\noindent}\textbf{Time in units of the initial mass doubling time}:
+\begin{align*}
+    \tau = \frac{t}{(M_0/\dot{M}_0)} ~ [{\rm dimensionless}]
+\end{align*}
+
+{\noindent}\textbf{Tired Light Hypothesis energy scaling}:
+\begin{align*}
+    E = E_0 \mathrm{e}^{(-r/R_0)} ~ [{\rm eV}]
+\end{align*}
+
+{\noindent}\textbf{Triple alpha process}:
+\begin{align*}
+    {\rm ^4_2He + ^4_2He} &\leftrightarrow {\rm ^8_4Be} \\
+    {\rm ^8_4Be + ^4_2He} &\rightarrow {\rm ^{12}_6C + \gamma}
+\end{align*}
+
+{\noindent}\textbf{Tully-Fisher relation}:
+\begin{align*}
+    L_\mathrm{TF} \propto v_\mathrm{max}^4 ~ [{\rm erg\,s^{-1}}]
+\end{align*}
+
+{\noindent}\textbf{Two-point correlation function}:
+\begin{align*}
+    \xi(r) = \left(\frac{r}{r_0}\right)^{-1.7} ~ [{\rm dimensionless}] 
+\end{align*}
+
+{\noindent}\textbf{Uncertainty Principle}: see \textit{Heisenberg Uncertainty Principle}
+
+{\noindent}\textbf{Variance (of distribution)}:
+\begin{align*}
+    s^2 \equiv \frac{1}{N-1} \sum (x_i-\bar{x})^2 ~ [{\rm function}]
+\end{align*}
+
+{\noindent}\textbf{Variance (of parent population)}:
+\begin{align*}
+    \sigma^2 \equiv \lim{N\rightarrow\infty} \left[\frac{1}{N}\sum(x_i-\mu)^2\right] = \lim_{N\rightarrow\infty} \left(\frac{1}{N}\sum x_i^2\right)-\mu^2 ~ [{\rm function}]
+\end{align*}
+
+{\noindent}\textbf{Velocity (circular)}:
+\begin{align*}
+    v_c = \sqrt{\frac{GM}{r}} ~ [{\rm m\,s^{-1}}]
+\end{align*}
+
+{\noindent}\textbf{Velocity FWHM (Gaussian)}:
+\begin{align*}
+    (\Delta v)_{\rm FWHM} = \sqrt{8\ln2}\sigma_v = 2\sqrt{\ln2}b ~ [{\rm km\,s^{-1}}]
+\end{align*}
+
+{\noindent}\textbf{Velocity (radial)}:
+\begin{align*}
+    v_r = \left(\frac{\Delta\lambda}{\lambda_0}\right)c ~ [{\rm m\,s^{-1}}]
+\end{align*}
+
+{\noindent}\textbf{Velocity (tangential)}:
+\begin{align*}
+    v_t = d\mu = 4.74\left(\frac{d}{1\,{\rm pc}}\right) \left(\frac{\mu}{1\,''\,{\rm year^{-1}}}\right) ~ [{\rm m\,s^{-1}}]
+\end{align*}
+
+{\noindent}\textbf{Virial parameter}:
+\begin{align*}
+    \alpha_\mathrm{vir} \sim \frac{\sigma_vR}{GM} ~ [{\rm dimensionless}]
+\end{align*}
+
+{\noindent}\textbf{Virial theorem}:
+\begin{align*}
+    E_\mathrm{pot} &= -2E_\mathrm{kin} ~ [{\rm J}] \\
+    E_\mathrm{tot} &= \frac{1}{2}E_\mathrm{pot} ~ [{\rm J}]
+\end{align*}
+
+{\noindent}\textbf{Visibility amplitude}:
+\begin{align*}
+    A = \sqrt{R_c^2 + R_s^2} ~ [{\rm dimensionless}]
+\end{align*}
+
+{\noindent}\textbf{Visibility phase}:
+\begin{align*}
+    \phi = \arctan \left(\frac{R_s}{c}\right) ~ [{\rm rad}]
+\end{align*}
+
+{\noindent}\textbf{Voigt profile}:
+\begin{align*}
+    \phi_\nu^{\rm Voigt} \equiv \frac{1}{\sqrt{2\pi}} \int \frac{e^{-v^2/2\sigma_v^2}}{\sigma_v} p_v(v) \frac{4\gamma_{u\ell}}{16\pi^2[\nu-(1-v/c)\nu_{u\ell}]^2 + \gamma_{u\ell}^2}{\rm d}v  ~ [{\rm erg\,s^{-1}\,cm^{-2}\,sr^{-1}}]
+\end{align*}
+
+{\noindent}\textbf{Voltage (interferometer)}:
+\begin{align*}
+    V_1 &= V\cos[\omega(t-\tau_g)] ~ [{\rm V}] \\
+    V_2 &= V\cos(\omega t) ~ [{\rm V}] \\
+    V_1V_2 &= V^2\cos[\omega(t-\tau_g)]\cos(\omega t) = \left(\frac{V^2}{2}\right) [\cos(2\omega t-\omega \tau)g)+\cos(\omega\tau_g)] ~ [{\rm V}]
+\end{align*}
+
+{\noindent}\textbf{Volume (specific)}:
+\begin{align*}
+    V \equiv \frac{1}{\rho}~ [{\rm g^{-1}\,cm^3}]
+\end{align*}
+
+{\noindent}\textbf{Wavelength-redshift relation}:
+\begin{align*}
+    \lambda_0 = \frac{1}{a(t)}\lambda = (1+z)\lambda ~ [{\rm m}]
+\end{align*}
+
+{\noindent}\textbf{Wien's Law}:
+\begin{align*}
+    B_\nu(T) &= \frac{2h\nu^3}{c^2} \frac{1}{\exp(h\nu/k_BT) - 1} ~ [{\rm erg\,s^{-1}\,cm^{-2}\,Hz^{-1}\,sr^{-1}}] \\
+    B_\nu(T) &\approx \frac{2h\nu^3}{c^2} \frac{1}{\exp(h\nu/k_BT)} ~ [{\rm erg\,s^{-1}\,cm^{-2}\,Hz^{-1}\,sr^{-1}}] \\
+    B_\nu(T) &\approx \frac{2h\nu^3}{c^2} \exp\left(\frac{-h\nu}{k_BT}\right) ~ [{\rm erg\,s^{-1}\,cm^{-2}\,Hz^{-1}\,sr^{-1}}]
+\end{align*}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                                      %
+%                                                      %
+%                   GENERAL NOTES                      %
+%                                                      %
+%                                                      %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newpage
+\subsection{General Notes}
+
+\begin{itemize}
+    \item $k_B(300\,\mathrm{K}) \sim \dfrac{1}{40}\,{\rm eV}$
+    \item $k_B(11,000\,\mathrm{K}) \sim 1\,{\rm eV}$
+    \item $k_B(10^7\,\mathrm{K}) \sim 1\,{\rm keV}$
+    \item Systems in thermal equilibrium satisfy normal populations of $(n_1/g_1)>(n_2/g_2)$; inverted populations satisfy $(n_1/g_1)<(n_2/g_2)$ (e.g., masers).
+    \item If a particle scatters with a rate greater than the expansion rate of the Universe, that particle remains in equilibrium.
+    \item Ordinary (i.e., baryonic) matter contributes at most 5\% of the Universe's critical density.
+    \item Multipole moment $\ell=1$ and $\ell=2$ are the dipole and quadrupole moment, respectively.
+    \item The greatest baryon contribution to the density comes not from stars in galaxies, but rather from gas in groups of galaxies; in these groups, $\Omega\sim0.02$.
+    \item The ratio of the neutrino temperature $T_\nu$ to the CMB temperature $T_\mathrm{CMB}$ is $\dfrac{T_\nu}{T_\mathrm{CMB}} = \left( \dfrac{4}{11} \right)^{1/3}$.
+    \item We expect photons to decouple from matter when the Universe is already well into the matter-dominated era (i.e., not in the radiation-dominated era).
+    \item When the Universe was only one second old, the mean-free-path of a photon was about the size of an atom.
+    \item Nuclear binding energies are typically in the $\rm{MeV}$ range, which explains why Big Bang nucleosynthesis occurs at temperatures a bit less than $1\,\rm{MeV}$ even though nuclear masses are in the $\rm{GeV}$ range.
+    \item The electron-positron energy threshold is $\sim10^{10}~{\rm K}$, above which there exist thermal populations of both electrons and neutrinos to make the reaction $p+e^-\leftrightarrow n+\nu$ go equally well in either direction.
+    \item Themodynamically, nucleons with greater binding energies are more energetically favourable.
+    \item Simplest way to form helium is via deuterium fusion rather than the improbable coincidence of $2$ protons and $2$ neutrons all arriving at the same place simultaneously to make $^4$He in one go.
+    \item Nucleosynthesis starts at about $10^{10}\,{\rm K}$ when the Universe was about $1\,{\rm s}$ old, and effectively ends when it has cooled by a factor of $10$, and is about $100$ times older.
+    \item Primordial elemental abundances: $75\%$ H, $25\%$ He, trace Li.
+    \item A normal population of states in LTE satisfies $(n_1/g_1)/(n_2/g_2)>1$ via the Maxwell-Boltzmann equation; inverted populations such as masers satisfy $(n_1/g_1)/(n_2/g_2)<1$.
+    \item The solid angle subtended by a complete sphere is $4\pi~{\rm sr}$.
+    \item Just as the period of a Cepheid tells you its luminosity, the rise and fall time of a type Ia SN tells you its peak luminosity.
+    \item The average Type 1a has a peak luminosity of $L=4\times10^9\,\mathrm{L}_\odot$ which is 100,000 times brighter than even the brightest Cepheid variable.
+    \item The Hubble distance $d_H$ is the distance between the Earth and any astrophysical object receding away from us at the speed of light.
+    \item At $z=10^9$, the Jeans mass is $M_J\sim M_\odot$; at $z=10^6$, the Jeans mass is $M_J\sim M_\mathrm{gal}$.
+    \item Apparent magnitudes $0<m<6$ are typically visible to the naked eye.
+    \item The absolute magnitude of a light source $M$ is defined as the apparent magnitude $m$ that it would have if it were at a luminosity distance of $d_L = 10\,{\rm pc}$.
+    \item The apparent magnitude is really nothing more than a logarithmic measure of the flux, and the absolute magnitude is a logarithmic measure of the luminosity.
+    \item When space is positively curved, the proper surface area is $A_p(t_0) < 4\pi r^2$, and the photons from distance $r$ are spread over a smaller area than they would be in flat space. When space is negatively curved, $A_p(t_0) > 4\pi r^2$, and photons are spread over a larger area than they would be in flat space.
+    \item The Benchmark Model has a deceleration parameter of $q_0\approx−0.55$.
+    \item The angular distribution of the CMB temperature reflects the matter inhomogeneities at the redshift of decoupling of radiation and matter.
+    \item The CMB is linearly polarized at the 10\% level.
+    \item CMB polarization probes the epoch of last scattering directly as opposed to the temperature fluctuations which may evolve between last scattering and the present. Moreover, different sources of temperature anisotropies (scalar, vector, and tensor) give different patterns in the polarization: both in its intrinsic structure and in its correlation with the temperature fluctuations themselves.
+    \item The sound speed in the photon-dominated fluid of the early Universe is given by $c_s\approx c/\sqrt{3}$. Thus, the sound horizon is about a factor of $\sqrt{3}$ smaller than the event horizon at this time.
+    \item At recombination, the free electrons recombined with the hydrogen and helium nuclei, after which there are essentially no more free electrons which couple to the photon field. Hence, after recombination the baryon fluid lacks the pressure support of the photons, and the sound speed drops to zero -- the sound waves do no longer propagate, but get frozen in.
+    \item In a universe which is dominated by dark matter the expected CMB fluctuations on small angular scales are considerably smaller than in a purely baryonic universe.
+    \item The number density of each of the three flavors of neutrinos ($\nu_e$, $\nu_\mu$, and $\nu_\tau$) has been calculated to be 3/11 times the number density of CMB photons. This means that at any moment, about twenty million cosmic neutrinos are zipping through your body.
+    \item Due to the steep slope of the IMF, most of the stellar mass is contained in low-mass stars; however, since the luminosity of main-sequence stars depends strongly on mass, approximately as $L\propto M^3$, most of the luminosity comes from high-mass stars.
+    \item Cooling by the primordial gas is efficient only above $T\gtrsim2\times10^4\,{\rm K}$ since metal lines cannot contribute to the cooling.
+    \item Whereas in enriched gas molecular hydrogen is formed on dust particles, the primordial gas had no dust so H$_2$ must form in the gas phase itself, rendering its abundance very small.
+    \item Even a tiny neutral fraction, $X_\mathrm{HI}\sim10^{-4}$, gives rise to complete GP absorption due to the large absorption cross section of Ly$\alpha$.
+    \item The key to the detectability of the $21\,{\rm cm}$ signal hinges on the spin temperature $T_s$. Only if this temperature deviates from the background temperature, will a signal be observable.
+    \item The spin temperature becomes strongly coupled to the gas temperature when $x_\mathrm{tot}\equiv x_c+x_\alpha\gtrsim1$ and relaxes to $T_\gamma$ when $x_\mathrm{tot}\ll1$.
+    \item The ratio of black hole mass and bulge mass is approximately $1/300$. In other words, 0.3\% of the baryon mass that was used to make the stellar population in the bulge of these galaxies was transformed into a central black hole.
+    \item It is not hard to show that $L$ is actually the length of the vector $\vec{r}\times\vec{\dot{r}}$, and hence that $r^2\dot{\phi}\equiv L$ is just a restatement of the conservation of angular momentum. Geometrically, $L$ is equal to twice the rate at which the radius vector sweeps out area.
+    \item The density at which grains and gas become well-coupled is around $10^4-10^5\,{cm^{-3}}$, which is higher than the typical density in a GMC.
+    \item The energy associated with the $21\,{\rm cm}$ transition is $\ll1\,{\rm K}$, so even in cold regions atomic hydrogen can be excited.
+    \item Since cosmic rays are relativistic particles, they have much lower interaction cross sections, and thus are able to penetrate into regions where light cannot.
+    \item Sightlines through diffuse gas in the MW have extinction parameters of $R_V\approx3.1$ as an average value.
+    \item At submillimeter frequencies and above, real materials have only a negligible response to an applied magnetic field -- this is because the magnetization of materials is the result of aligned electron spins and electron orbital currents, and an electron spin (or orbit) can change direction only on time scales longer than the period for the electron spin (or orbit) to precess in the local (microscopic) magnetic fields within atoms and solids. These fields are at most $B_i\lesssim10\,{\rm kG}$, and the precession frequencies are $\omega_p\approx \mu_BB_i/\hbar\lesssim10^{10}\,{\rm s^{-1}}$.
+    \item Ray-tracing arguments would lead us to expect the extinction cross section to be equal to the geometric cross section, but diffraction around the target leads to additional small-angle scattering, with the total extinction cross section equal to twice the geometric cross section.
+    \item Molecular hydrogen (H$_2$) has a binding energy of $4.5\,{\rm eV}$.
+    \item The ionization potential of $13.6\,{\rm eV}$ for atomic hydrogen isn't very different from the dissociation potential of $4.5\,{\rm eV}$ for molecular hydrogen.
+    \item $\gamma=4/3$ is the critical value required to have a hydrostatic object.
+    \item Each deuterium burned provides $5.5\,{\rm MeV}$ of energy, comparable the $7\,{\rm MeV}$ per hydrogen provided by burning hydrogen, but there are only $2\times10^{-5}$ D nuclei per H nuclei. Thus, at fixed luminosity the ``main sequence'' lifetime for D burning is shorter than that for H burning by a factor of $2\times10^{-5}\times5.5/7 = 1.6\times10^{-5}$.
+    \item Typical accretion rates are of order a few times $10^{-6}\,{M_\odot\,yr^{-1}}$, so a $1\,{\rm M_\odot}$ star takes a few times $10^5\,{\rm yr}$ to form. Thus stars may burn deuterium for most of the time they are accreting.
+    \item The highly forbidden spin-flip transition of $21\,{\rm cm}$ emission is intrinsically so rare (Einstein A coefficient $A_{ul}=2.85\times10^{-15}\,{\rm s^{-1}}$) that very long paths are needed for the $21\,{\rm cm}$ line to be detectable.
+    \item Each subshell has a maximum number of electrons which it can hold: $s$: $2$ electrons, $p$: $6$ electrons, $d$: $10$ electrons, and $f$: $14$ electrons.
+    \item The $s$ subshell is the lowest energy subshell and the $f$ subshell is the highest energy subshell.
+    \item Most of the interstellar gas in the Milky Way is neutral, and $\sim78\%$ of the neutral hydrogen is atomic, or HI. 
+    \item A star is said to be in thermal equilibrium when the total rate of nuclear energy generation is almost perfectly equal to its surface luminosity.
+    \item If the nuclear luminosity is equal to the surface luminosity, the star is in thermal equilibrium and its evolution proceeds on a nuclear timescale. Conversely, if these are not equal, the star is out of thermal equilibrium and its evolution proceeds on a thermal timescale, which usually is much shorter than the nuclear timescale.
+    \item The strongest transitions are electric dipole transitions. These are transitions satisfying selection rules.
+    \item there is a hierarchy in the transition probabilities: very roughly speaking, inter-system lines are $\sim10^6$ times weaker than permitted transitions, and forbidden lines are $\sim10^2-10^6$ times weaker than inter-system transitions.
+    \item Despite being very ``weak,'' forbidden transitions are important in astrophysics for the simple reason that every atom and ion has excited states that can only decay via forbidden transitions. At high densities, such excited states would be depopulated by collisions, but at the very low densities of interstellar space, collisions are sufficiently infrequent that there is time for forbidden radiative transitions to take place.
+    \item Even at $T=10^8\,{\rm K}$ Compton scattering reduces the opacity by only 20\% of that given by the Thomson scattering equation.
+    \item Degeneracy increases the mean free path considerably, since the quantum cells of phase space are filled up such that collisions in which the momentum is changed become rather improbable.
+    \item In the deep interior of a star, if the actual temperature gradient is just \textit{slightly} larger than the adiabatic temperature gradient, this may be sufficient to carry nearly all of the luminosity by convection. Consequently, it is often the case that either radiation or convection dominates the energy transport in the deep interior of stars, while the other energy transport mechanism contributes very little to the total energy outflow. The particular mechanism in operation is determined by the temperature gradient. However, near the surface of the star, the situation is much more complicated: both radiation and convection can carry significant amounts of energy simultaneously.
+    \item One solar neutrino unit (SNU) corresponds to $10^{-36}$ captures per second and per target nucleus.
+    \item What created the apparent solar neutrino deficit is the fact that neutrinos can change their flavour, both while travelling through vacuum and more efficiently in the presence of electrons in the solar interior. These so-called \textbf{neutrino oscillations} are possible only if neutrinos have mass.
+    \item It is extremely difficult for a star to have more than about 10 percent of the magnitude of its gravitational energy stored in the form of rotational energy.
+    \item Most, but not all, large-amplitude variables pulsate in the fundamental mode.
+    \item Non-radial pulsation tends to produce smaller amplitudes than radial modes in the brightness and colour variation.
+    \item Linear adiabatic theory (LAT) shows that the relative amplitude of pulsation tends to be largest in the outer layers of the star, where the density is lowest.
+    \item Linear non-adiabatic theory (LNAT) of stellar pulsations gives periods which are slightly more realistic than the linear adiabatic theory (LAT), though they are about the same in most cases.
+    \item Non-linear non-adiabatic theory accurately predicts the amplitudes of Cepheids and RR Lyrae stars, which pulsate in one or two radial modes. It has not been able to explain stars like Delta Scuti stars, which can and do pulsate in many radial and non-radial modes.
+    \item The Cepheid instability strip extends from the top of the HR diagram to the bottom, at approximately constant temperature. That is because the instability mechanism occurs at a particular temperature -- the temperature at which there is a helium ionization zone in the outer layers of the star.
+    \item Aside from the stars of smallest mass ($M<0.25\,{\rm M_\odot}$), we can roughly distinguish between two types of radiative/convective models: (1) radiative core + convective envelope (lower MS) and (2) convective core + radiative envelope (upper MS.) The transition from one type to the other occurs near $M=1\,{\rm M)\odot}$.
+    \item For an ideal monatomic gas, $\gamma=5/3$ and convection will occur in some region of a star when ${\rm d}\ln P/{\rm d}\ln T<2.5$.
+    \item The base of the Sun's present-day convection zone is at $0.714\,{\rm R_\odot}$.
+    \item Many Herbig Ae stars are still contracting to the main sequence, and are thus either still surrounded by remnants of their stellar cocoons, or have developed massive stellar winds.
+    \item Many metallic-line A-type (Am) stars show the \textbf{anomalous luminosity effect} in which the luminosity criteria in certain spectral regions (in particular, the region from $4077-4200$\AA) may indicate a giant or even a supergiant luminosity, whereas other regions indicate a dwarf luminosity or even lower.
+    \item All T dwarfs are brown dwarfs.
+    \item The dividing line between Class 0 and Class 1 is that the star begins to produce enough heating that there is non-trivial infrared emission.
+    \item Class II YSOs correspond to classical T Tauri stars, which are pre-main-sequence stars, still undergoing gravitational contraction, with substantial accretion disks and accretion rates $\sim10^{-6}\,{\rm M_\odot\,yr^{-1}}$.
+    \item Class III YSOs correspond to \textbf{weak-lined T Tauri stars}, which are pre-main-sequence stars still undergoing gravitational contraction, but where the accretion disk is either weak or perhaps entirely absent.
+    \item The greater the column density of the dust around a protostar, the further light will have to diffuse in wavelength in order to escape. Thus the wavelength at which the emission peaks, or, roughly equivalently, the slope of the spectrum at a fixed wavelength, is a good diagnostic for the amount of circumstellar dust.
+    \item Classification of a given object as either Class I or Class II may depend on the source orientation. If we are viewing the object face-on it, may be classified as Class II, but an identical disk viewed edge-on could heavily redden the light reaching the observer, so that the object could be classified as Class I or even Class 0.
+    \item A spectral index of around $-1.6$ is what we expect for a bare stellar photosphere without any excess IR emission coming from circumstellar material.
+    \item SNe will disrupt an initially uniform ISM in only $\sim2\,{\rm Myr}$.
+    \item It is a general property of nuclear reaction rates that the temperature dependence $T^\nu$ ``weakens'' as the temperature increases, while the efficiency $\epsilon_0$ increases.
+    \item In general, the efficiency of the nuclear cycles rate is governed by the slowest process taking place. In the case of p-p cycles, this is always the production of deuterium given in step 1. For the CNO cycle, the limiting reaction rate depends on the temperature.
+    \item Whereas the typical ionization energy of an atom can be measured in tens to thousands of electron volts, the typical binding energy of a nucleon in the nucleus is several million electron volts.
+    \item Typical r-process elements are Ge, Zr, Te, Xe, Eu, Os, Pt, and Au, and typical s-process elements are Sr and Ba.
+    \item The dependence on the mass-to-charge ratio in the synchrotron power means that electrons are by several orders of magnitude dominant over protons or ions in generating synchrotron radiation.
+    \item Synchrotron radiation dominates the sky brightness at frequencies $\nu\lesssim1\,{\rm GHz}$.
+    \item At distances of a few standard deviations from the mean of an experimental distribution, non-statistical errors may dominate. In especially severe cases, it may be preferable to describe the spread of the distribution in terms of the average deviation, rather than the standard deviation, because the latter tends to de-emphasize measurements that are far from the mean.
+    \item Because the Poisson distribution $P_P(x;\mu)$ is an approximation to the binomial distribution for $p\ll1$, the distribution is asymmetric about its mean $\mu$. Note that $P_P(x;\mu)$ does not become $0$ for $x=0$ and is not defined for negative values of $x$. This restriction is not troublesome for counting experiments because the number of counts per unit time interval can never be negative.
+    \item The Gaussian distribution is an approximation to the binomial distribution for the special limiting case where the number of possible different observations $n$ becomes infinitely large and the probability of success for each is finitely large so $np\gg1$. It is also the limiting case for the Poisson distribution as $\mu$ becomes large.
+    \item The width of the Gaussian curve is determined by the value of $\sigma$, such that for $x=\mu+\sigma$, the height of the curve is reduced to $e^{-1/2}$ of its value at the peak.
+    \item The binomial distribution has the special property that the mean is equal to the variance.
+    \item The principle of mass conservation rules out monopole radiation, and the principles of linear and angular momentum conservation rule out gravitational dipole radiation.
+    \item The gravitational wave field strength is proportional to the second time derivative of the quadrupole moment of the source.
+    \item At the targeted LIGO strain sensitivity of $10^{-21}$, the resulting arm length change is only $\sim10^{-18}\,{\rm m}$, a thousand times smaller than the diameter of a proton.
+    \item In the long-wavelength approximation, the interferometer directional response is maximal for GWs propagating orthogonally to the plane of the interferometer arms and linearly polarized along the arms.
+    \item The LIGO interferometers were supplemented with a set of sensors to monitor the local environment. Seismometers and accelerometers measure vibrations of the ground and various interferometer components; microphones monitor acoustic noise at critical locations; magnetometers monitor fields that could couple to the test masses or electronics; radio receivers monitor RF power around the modulation frequencies. These sensors are used to detect environmental disturbances that can couple to the GW channel.
+    \item An extended distribution of mass will produce an odd number of images in a gravitational lens system.
+    \item Silicon has a useful photoelectric effect range of $1.1$ to about $10\,{\rm eV}$, which covers the near-IR to soft X-ray region. Above and below these limits, the CCD material appears transparent to the incoming photons.
+    \item A typical CCD gain might be $10$ electrons/ADU, which means that for every $10$ electrons collected within a pixel, the output from that pixel will produce, on average, a count or DN value of $1$.
+    \item At room temperature, the dark current of a typical CCD is near $2.5\times10^4$ electrons/pixel/second. Typical values for properly cooled devices range from $2$ electrons per second per pixel down to very low levels of approximately $0.04$ electrons per second for each pixel. Although $2$ electrons of thermal noise generated within a pixel every second sounds very low, a typical $15$ minute exposure of a faint astronomical source would include $1800$ additional (thermal) electrons within each CCD pixel upon readout.
+    \item The mean molecular weight is just the average mass of a free particle in the gas, in units of the mass of hydrogen.
+    \item By the \textbf{virial theorem}, the total energy of a system of particles in equilibrium is one-half of the system's potential energy. Therefore, only one-half of the change in gravitational potential energy of a star is actually available to be radiated away.
+    \item In counting the number of leptons involved in a nuclear reaction, we treat matter and anti-matter differently. Specifically, the total number of matter leptons \textit{minus} the total number of anti-matter leptons must remain constant.
+    \item The CNO cycle ($\epsilon_{\rm CNO}\propto T_6^{19.9}$) is much more strongly temperature-dependent than the pp chain ($\epsilon_{pp}\propto T_6^4$) is. This property implies that low-mass stars, which have smaller central temperatures, are dominated by the pp chain during their ``hydrogen burning'' evolution, whereas more massive stars, with their higher central temperatures, convert hydrogen to helium by the CNO cycle. The transition in stellar mass between stars dominated by the pp chain and those dominated by the CNO cycle occurs for stars slightly more massive than our Sun.
+    \item Since core-collapse SNe appear after only $10^7$ years following the onset of star formation (recall that they are the result of massive star evolution) and they produce a higher abundance of oxygen relative to iron, $[{\rm O/H}]$ may also be used to determine the ages of Galactic components in addition to $[{\rm Fe/H}]$. 
+    \item The younger a stellar population is, the smaller its scale height.
+    \end{itemize}
+
+\end{document}
