@@ -1,1 +1,1 @@
-# Qalifying-Exam
+# Qualifying-Exam
